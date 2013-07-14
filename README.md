@@ -1,4 +1,6 @@
-homepage
+Homepage
 ========
 
-http://hpenedones.github.com/homepage
+I am currently hosting my homepage at:
+
+http://hpenedones.org
