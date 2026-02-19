@@ -88,7 +88,24 @@
         const container = document.getElementById('blog-posts');
         container.innerHTML = '';
 
+        let currentYear = null;
+
         for (const post of posts) {
+          // Extract year from post date
+          const postYear = post.date.substring(0, 4);
+
+          // Add year header if we're starting a new year
+          if (postYear !== currentYear) {
+            const yearHeader = document.createElement('h3');
+            yearHeader.textContent = postYear;
+            yearHeader.style.marginTop = currentYear === null ? '0' : '40px';
+            yearHeader.style.marginBottom = '20px';
+            yearHeader.style.borderBottom = '2px solid #ccc';
+            yearHeader.style.paddingBottom = '10px';
+            container.appendChild(yearHeader);
+            currentYear = postYear;
+          }
+
           const postDiv = document.createElement('div');
           postDiv.style.marginBottom = '40px';
 
