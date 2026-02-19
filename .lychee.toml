@@ -1,0 +1,50 @@
+# Lychee link checker configuration
+# https://github.com/lycheeverse/lychee#commandline-parameters
+
+# Maximum number of concurrent network requests
+max_concurrency = 10
+
+# Timeout for each request in seconds
+timeout = 30
+
+# Maximum number of retries per link
+max_retries = 3
+
+# Accept HTTP status codes as valid
+accept = [200, 201, 202, 203, 204, 206, 429]
+
+# Exclude links matching these patterns
+exclude = [
+  # Exclude localhost and private IPs
+  "127.0.0.1",
+  "localhost",
+
+  # Exclude email addresses
+  "^mailto:",
+
+  # Exclude known temporary or placeholder URLs
+  "example.com",
+  "example.org",
+
+  # Blogger video embeds (these require authentication tokens)
+  "blogger.com/video.g",
+
+  # Google Gravatar (sometimes gives false positives)
+  "gravatar.com",
+
+  # Some sites block automated requests
+  "linkedin.com",
+  "facebook.com",
+  "twitter.com",
+  "x.com",
+]
+
+# Include these file extensions in the check
+include = ["**/*.html", "**/*.md"]
+
+# Exclude specific paths or files
+exclude_path = [
+  ".git",
+  "node_modules",
+  ".github",
+]
