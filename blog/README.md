@@ -28,10 +28,6 @@ This organization matches the structure of the original Blogspot blog that was i
    ```
 4. **Commit and push** - your blog post will be live!
 
-## Importing from Blogspot
-
-If you need to import posts from your old Blogspot blog, see [IMPORT_GUIDE.md](IMPORT_GUIDE.md) for instructions on using the `import_from_blogspot.py` script.
-
 ## How it works
 
 - Blog posts are written as Markdown files (`.md`)
