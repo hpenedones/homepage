@@ -35,8 +35,11 @@
 
     <script>
       // Configuration: list of blog posts (newest first)
+      // After running import_from_blogspot.py, replace this array with the contents of posts_array.js
       const posts = [
-        { file: 'first-post.md', title: 'My First Blog Post', date: '2026-02-19' }
+        { file: 'first-post.md', title: 'My First Blog Post', date: '2026-02-19' },
+        // Sample imported post from Blogspot (organized by year)
+        { file: '2008/2008-05-31-sample-post.md', title: 'Generating all possible pictures', date: '2008-05-31' }
       ];
 
       async function loadBlogPosts() {
