@@ -122,8 +122,76 @@
 
           postDiv.appendChild(title);
           postDiv.appendChild(date);
+
+          // Fetch and display preview text
+          try {
+            const response = await fetch(post.file);
+            if (response.ok) {
+              const markdown = await response.text();
+              const preview = extractPreview(markdown);
+              if (preview) {
+                const previewP = document.createElement('p');
+                previewP.style.color = '#555';
+                previewP.style.fontSize = '14px';
+                previewP.style.marginTop = '10px';
+                previewP.style.fontStyle = 'italic';
+                previewP.textContent = preview + '...';
+                postDiv.appendChild(previewP);
+              }
+            }
+          } catch (error) {
+            // Silently fail if preview can't be loaded
+            console.warn('Could not load preview for', post.file, error);
+          }
+
           container.appendChild(postDiv);
         }
+      }
+
+      function extractPreview(markdown) {
+        // Split into lines and filter out empty lines
+        const lines = markdown.split('\n').map(line => line.trim()).filter(line => line.length > 0);
+
+        // Skip the title (first line starting with #)
+        let startIndex = 0;
+        if (lines[0] && lines[0].startsWith('#')) {
+          startIndex = 1;
+        }
+
+        // Skip metadata lines (Date:, Original URL:, ---)
+        for (let i = startIndex; i < lines.length; i++) {
+          const line = lines[i];
+          // Skip metadata patterns and horizontal rules
+          if (line.startsWith('**Date:**') ||
+              line.startsWith('**Original URL:**') ||
+              line === '---' ||
+              line.startsWith('Date:') ||
+              line.startsWith('Original URL:')) {
+            continue;
+          }
+          // Found first content line
+          if (line.length > 0) {
+            // Remove markdown formatting from the preview
+            let preview = line
+              .replace(/\*\*([^*]+)\*\*/g, '$1')  // Remove bold
+              .replace(/\*([^*]+)\*/g, '$1')      // Remove italic
+              .replace(/\[([^\]]+)\]\([^\)]+\)/g, '$1')  // Remove links but keep text
+              .replace(/^#+\s+/, '')              // Remove any header markers
+              .replace(/`([^`]+)`/g, '$1');       // Remove inline code formatting
+
+            // Limit to first ~150 characters
+            if (preview.length > 150) {
+              preview = preview.substring(0, 150).trim();
+              // Try to break at a word boundary
+              const lastSpace = preview.lastIndexOf(' ');
+              if (lastSpace > 100) {
+                preview = preview.substring(0, lastSpace);
+              }
+            }
+            return preview;
+          }
+        }
+        return null;
       }
 
       loadBlogPosts();
