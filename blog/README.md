@@ -9,7 +9,6 @@ Posts are organized by year in subdirectories:
 - `2009/` - Posts from 2009
 - `2010/` - Posts from 2010
 - `2012/` - Posts from 2012
-- `2013/` - Posts from 2013
 - Root directory - New posts
 
 This organization matches the structure of the original Blogspot blog that was imported.
