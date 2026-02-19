@@ -1,0 +1,18 @@
+# NYC Machine Learning Symposium 2010
+
+**Date:** October 23, 2010
+
+**Original URL:** https://aboutintelligence.blogspot.com/2010/10/nyc-machine-learning-symposium-2010.html
+
+---
+
+The [event](http://www.nyas.org/events/Detail.aspx?cid=1cdd40d6-fc64-44e8-b225-db49ac0d90f1) took place yesterday at the New York Academy of Sciences, a building right next to the World Trade Center. The views from the 40th floor were breathtaking:  
+[
+
+![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhEK3GjnYdQ5v_FNUevy9UB_fMJj60rW123Lgnoez-2LpU6ymaGGAUWkkQudvqQfylTE1vxwjX0QfocwGFrJ5sEttKsdb1V4S6UBQehU_ztaJHM3ALviJXN6AlZwWRYMTqmxSyFth4ESaE/s320/photo.jpg)
+
+](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhEK3GjnYdQ5v_FNUevy9UB_fMJj60rW123Lgnoez-2LpU6ymaGGAUWkkQudvqQfylTE1vxwjX0QfocwGFrJ5sEttKsdb1V4S6UBQehU_ztaJHM3ALviJXN6AlZwWRYMTqmxSyFth4ESaE/s1600/photo.jpg)  
+The names of the participants in the room was no less impressive, (by no special order): Corinna Cortes (Google), Rob Schapire and David Blei (Princeton University), John Langford and Alex Smola (Yahoo), Yann LeCun (NYU), Sanjoy Dasgupta (Univ. California), Michael Collins (MIT), Patrick Haffner (AT&T), among many others.  
+I particularly liked to see the latest developments in LeCun's group, including a demo by Benoit Corda and Clément Farabet on speeding-up Convolutional Neural Networks with GPUs and FPGAs. Alex Kulezka and Ben Taskar had a nice work on "Structured Determinantal Point Processes", which can be seen as a probabilistic model with a bias towards diversity of the hidden structures. Mathew Hoffman (with D. Blei and F. Bach) used stochastic gradient descent (widely used among neural network community) for online training of topic models. Sean Gerrish and D. Blei actually had a funny application of topic models to the prediction of votes by Senators!I was also happy to see that there is some Machine Learning being applied to the problem of sustainability and the environment. Gregory Moore and Charles Bergeron had a poster on trash detection in lakes, rivers and oceans. To conclude, the best student paper award went to a more theoretical paper by Kareem Amin, Michael Kearns and Umar Syed (U Penn) called "Parametric Bandits, Query Learning, and the Haystack Dimension", which defines a measure of complexity for multi-armed bandit problems in which the number of actions can be infinite (there is some analogy to the role of VC-dimension in other learning models).  
+There were probably many other interesting posters worth being mentioned, but I didn't have the chance to check them all!  
+On the personal side: my summer internship at NEC Labs with David Grangier is about to finish. It was an amazing learning experience and I am very grateful for it. Next step: back to Idiap Research Institute, EPFL and all the Swiss lakes and mountains! :)
