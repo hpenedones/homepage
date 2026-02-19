@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Hugo Penedones - Blog</title>
+
+    <link rel="stylesheet" href="../stylesheets/styles.css">
+    <link rel="stylesheet" href="../stylesheets/pygment_trac.css">
+    <script src="../javascripts/scale.fix.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked@11.1.1/marked.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1 class="header">Hugo Penedones</h1>
+
+        <img src="http://www.gravatar.com/avatar/bec688bb67564e72dc34cad9575c686d?s=120"/>
+        <p><a href="../index.html">← Back to homepage</a></p>
+      </header>
+      <section>
+        <h2>Blog</h2>
+        <div id="blog-posts">
+          <p>Loading blog posts...</p>
+        </div>
+      </section>
+      <footer>
+      </footer>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+
+    <script>
+      // Configuration: list of blog posts (newest first)
+      const posts = [
+        { file: 'first-post.md', title: 'My First Blog Post', date: '2026-02-19' }
+      ];
+
+      async function loadBlogPosts() {
+        const container = document.getElementById('blog-posts');
+        container.innerHTML = '';
+
+        for (const post of posts) {
+          const postDiv = document.createElement('div');
+          postDiv.style.marginBottom = '40px';
+
+          const title = document.createElement('h3');
+          const titleLink = document.createElement('a');
+          titleLink.href = `post.html?file=${post.file}`;
+          titleLink.textContent = post.title;
+          title.appendChild(titleLink);
+
+          const date = document.createElement('p');
+          date.style.color = '#666';
+          date.style.fontSize = '14px';
+          date.style.marginTop = '-10px';
+          date.textContent = post.date;
+
+          postDiv.appendChild(title);
+          postDiv.appendChild(date);
+          container.appendChild(postDiv);
+        }
+      }
+
+      loadBlogPosts();
+    </script>
+
+  </body>
+</html>

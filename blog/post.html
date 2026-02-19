@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Hugo Penedones - Blog</title>
+
+    <link rel="stylesheet" href="../stylesheets/styles.css">
+    <link rel="stylesheet" href="../stylesheets/pygment_trac.css">
+    <script src="../javascripts/scale.fix.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked@11.1.1/marked.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1 class="header">Hugo Penedones</h1>
+
+        <img src="http://www.gravatar.com/avatar/bec688bb67564e72dc34cad9575c686d?s=120"/>
+        <p><a href="index.html">← Back to blog</a></p>
+      </header>
+      <section>
+        <div id="post-content">
+          <p>Loading...</p>
+        </div>
+      </section>
+      <footer>
+      </footer>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+
+    <script>
+      async function loadPost() {
+        const params = new URLSearchParams(window.location.search);
+        const file = params.get('file');
+
+        if (!file) {
+          document.getElementById('post-content').innerHTML = '<p>No post specified.</p>';
+          return;
+        }
+
+        try {
+          const response = await fetch(file);
+          if (!response.ok) {
+            throw new Error('Post not found');
+          }
+
+          const markdown = await response.text();
+          const html = marked.parse(markdown);
+          document.getElementById('post-content').innerHTML = html;
+        } catch (error) {
+          document.getElementById('post-content').innerHTML = '<p>Error loading post: ' + error.message + '</p>';
+        }
+      }
+
+      loadPost();
+    </script>
+
+  </body>
+</html>
