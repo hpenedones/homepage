@@ -33,6 +33,23 @@
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->
 
     <script>
+      // Configure marked to add IDs to headings for anchor links
+      marked.use({
+        renderer: {
+          heading(text, level) {
+            // Generate slug from heading text (similar to GitHub-style slugs)
+            const slug = text
+              .toLowerCase()
+              .replace(/[^\w\s-]/g, '') // Remove special characters except spaces and hyphens
+              .replace(/\s+/g, '-')      // Replace spaces with hyphens
+              .replace(/-+/g, '-')       // Replace multiple hyphens with single hyphen
+              .replace(/^-+|-+$/g, '');  // Trim hyphens from start and end
+
+            return `<h${level} id="${slug}">${text}</h${level}>\n`;
+          }
+        }
+      });
+
       async function loadPost() {
         const params = new URLSearchParams(window.location.search);
         const file = params.get('file');
