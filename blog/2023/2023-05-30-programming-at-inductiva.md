@@ -4,10 +4,6 @@
 
 **Original URL:** https://inductiva.ai/blog/article/programming-at-inductiva
 
-**Authors:** Hugo Penedones, Luís Sarmento
-
-**Reviewer:** Luís Cunha
-
 ---
 
 Computation is at the heart of what we do. We write computer programs for running simulations of physical systems, training Machine Learning models, automating tasks or simply testing new ideas. In this blog post we share the programming principles that we try to follow to make fast progress on our goals, while maintaining high standards on the quality of our code.
