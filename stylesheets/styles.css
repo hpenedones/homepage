@@ -441,14 +441,15 @@ footer {
 }
 
 .publication-links {
-  margin-top: 4px;
+  display: inline;
+  margin-left: 8px;
 }
 
 .publication-links a {
   display: inline-block;
-  margin-right: 12px;
-  font-size: 13px;
-  padding: 4px 10px;
+  margin-right: 8px;
+  font-size: 12px;
+  padding: 2px 8px;
   background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 3px;
@@ -504,14 +505,15 @@ footer {
 }
 
 .talk-links {
-  margin-top: 4px;
+  display: inline;
+  margin-left: 8px;
 }
 
 .talk-links a {
   display: inline-block;
-  margin-right: 12px;
-  font-size: 13px;
-  padding: 4px 10px;
+  margin-right: 8px;
+  font-size: 12px;
+  padding: 2px 8px;
   background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 3px;
@@ -567,14 +569,15 @@ footer {
 }
 
 .code-project-links {
-  margin-top: 4px;
+  display: inline;
+  margin-left: 8px;
 }
 
 .code-project-links a {
   display: inline-block;
-  margin-right: 12px;
-  font-size: 13px;
-  padding: 4px 10px;
+  margin-right: 8px;
+  font-size: 12px;
+  padding: 2px 8px;
   background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 3px;
