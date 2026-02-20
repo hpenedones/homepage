@@ -9,20 +9,21 @@ Posts are organized by year in subdirectories:
 - `2009/` - Posts from 2009
 - `2010/` - Posts from 2010
 - `2012/` - Posts from 2012
-- Root directory - New posts
+- `2013/` - Posts from 2013
+- `2026/` - New posts should be created in year folders (e.g., `2026/`)
 
 This organization matches the structure of the original Blogspot blog that was imported.
 
 ## How to add a new blog post
 
-1. **Create a new Markdown file** in this directory or in a year subdirectory (e.g., `my-new-post.md` or `2026/my-new-post.md`)
+1. **Create a new Markdown file** in a year subdirectory (e.g., `2026/my-new-post.md`)
 2. **Write your post** using Markdown syntax
 3. **Edit `index.html`** and add your post to the `posts` array (around line 38):
    ```javascript
    const posts = [
-     { file: 'my-new-post.md', title: 'My New Post Title', date: '2026-02-20' },
-     { file: '2008/2008-05-31-old-post.md', title: 'Old Post Title', date: '2008-05-31' },
-     { file: 'first-post.md', title: 'My First Blog Post', date: '2026-02-19' }
+     { file: '2026/my-new-post.md', title: 'My New Post Title', date: '2026-02-20' },
+     { file: '2012/2012-11-20-machine-learning-workshop-idiap-epfl-2012.md', title: 'Machine Learning Workshop', date: '2012-11-20' },
+     // ... other posts
    ];
    ```
 4. **Commit and push** - your blog post will be live!
