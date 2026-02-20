@@ -7,10 +7,10 @@
 ---
 
 Each individual is respected as such and has the freedom and the means to pursue its own interests without having to harm the others.  
-  
+
  Don't know how it looks like. It's a pretty simple (non-constructive) definition, however.  
 I'm sure mathematicians like it!  
-  
+
  Read more at my webpage:  
 [http://hpenedones.googlepages.com/thoughtsonlife  
 ](http://hpenedones.googlepages.com/thoughtsonlife)  

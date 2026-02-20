@@ -7,9 +7,9 @@
 ---
 
 I will not be there, but I am looking forward to seeing what comes out of it.  
-  
+
 The First Conference on Artificial General Intelligence (1st-3rd March, Memphis, US):  
-  
+
 [http://www.agi-08.org](http://www.agi-08.org/)  
-  
+
 Note that you can already read the submitted papers in the website.
