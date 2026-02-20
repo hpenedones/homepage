@@ -13,7 +13,7 @@ Here is a book edited by Ben Goertzel and Cassio Pennachin putting together seve
   
 [
 
-![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgDC2QfoqjzrSSiAxbVpz0ZBRa9km4rsIRO6Xik_SXBvaHVuFtlcfMvUe5GrIQKjkQ3QHNNoI5XLL9j4_XMqlec1T1UQXuyLhp7iRUegUqaDc4qQcMEelpGh_jCEdLYEM77LbEWYPOk5Uw/s320/agi.png)
+![](/images/blogger-AVvXsEgDC2Qfoqjz-agi.png)
 
 ](http://www.goertzel.org/books.htm)  
 As I read it, I will post comments on individual chapters concerning different approaches to AGI.

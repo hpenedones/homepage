@@ -8,9 +8,9 @@
 
 [
 
-![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhNsDKM24TbhSTujsJBpQ5Mk4a0SN6q1Me0uC7LT4FYIvaXIc4L5kH4oaeKVN1xkJmR2LxKWaM8TaDta6UG_cxSpF63Fzk85rUH34nan_e6sfSpizIXrxlVCV353ZYdHWdzl0YQNzyIjds/s320/vapnik.jpg)
+![](/images/blogger-AVvXsEhNsDKM24Tb-vapnik.jpg)
 
-](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhNsDKM24TbhSTujsJBpQ5Mk4a0SN6q1Me0uC7LT4FYIvaXIc4L5kH4oaeKVN1xkJmR2LxKWaM8TaDta6UG_cxSpF63Fzk85rUH34nan_e6sfSpizIXrxlVCV353ZYdHWdzl0YQNzyIjds/s1600-h/vapnik.jpg)  
+](/images/blogger-AVvXsEhNsDKM24Tb-vapnik.jpg)  
   
 This is an extremely geek picture! :) Let's try to explain it:  
   
@@ -20,9 +20,9 @@ Then we notice the sentence in the board: it resembles the famous "[All your bas
   
 [
 
-![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg1zC1k8Ig3Ml-peEqqIU_WKPyKCwYo4bfbnGG-7w7M5t_AaDqVXeAlUPn15rknDZPs3p3P-5uc4m4El-gNgNlJMXPWKwyifYNZQqQK_sNHEnlMWlasI8YVRCUCVQjgA_UXa_E31MhnVTY/s320/Aybabtu.png)
+![](/images/blogger-AVvXsEg1zC1k8Ig3-Aybabtu.png)
 
-](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg1zC1k8Ig3Ml-peEqqIU_WKPyKCwYo4bfbnGG-7w7M5t_AaDqVXeAlUPn15rknDZPs3p3P-5uc4m4El-gNgNlJMXPWKwyifYNZQqQK_sNHEnlMWlasI8YVRCUCVQjgA_UXa_E31MhnVTY/s1600-h/Aybabtu.png)  
+](/images/blogger-AVvXsEg1zC1k8Ig3-Aybabtu.png)  
   
 Wait, but they replaced the word "Base" by "Bayes"!?  
 Yes, that [Bayes](http://en.wikipedia.org/wiki/Thomas_Bayes), the British mathematician known for the [Bayes' theorem](http://en.wikipedia.org/wiki/Bayes%27_theorem).  
@@ -32,9 +32,9 @@ By the moment we think things can not get more geeky, we realize there is scary 
   
 [
 
-![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg9A35AsgbtagiWfcACvF2Y6qGi1A88kB8jaaOzQBTHXEjMm1bMrgGbaeUNWsQYQVWF4YMQOlYxEwx0CfdU4msf12qXuJvq-Ezae11pRgO7zbgwEeVdDMvuhm-PxyUh1RBbtVXORDcVt5U/s400/bound.png)
+![](/images/blogger-AVvXsEg9A35Asgbt-bound.png)
 
-](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg9A35AsgbtagiWfcACvF2Y6qGi1A88kB8jaaOzQBTHXEjMm1bMrgGbaeUNWsQYQVWF4YMQOlYxEwx0CfdU4msf12qXuJvq-Ezae11pRgO7zbgwEeVdDMvuhm-PxyUh1RBbtVXORDcVt5U/s1600-h/bound.png)My goodness, what's this?! Okay, that's when things get really technical:  
+](/images/blogger-AVvXsEg9A35Asgbt-bound.png)My goodness, what's this?! Okay, that's when things get really technical:  
 This is a probabilistic bound for the expected risk of a classifier under the ERM framework. In simple terms, it relates the classifier's expected test error with the training error on a dataset of size l and in which the cardinality of the set of loss functions is N.  
 If I'm not mistaken, the bound holds with probability (1 - eta) and applies only to loss functions bounded above by 1.  
   
