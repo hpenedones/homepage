@@ -115,7 +115,7 @@
           // Generate clean URL from the filename (remove year prefix and .md extension)
           const filename = post.file.split('/')[1]; // Get just the filename without year folder
           const slug = filename.replace('.md', '');
-          titleLink.href = `${slug}.html`;
+          titleLink.href = slug;
           titleLink.textContent = post.title;
           title.appendChild(titleLink);
 
