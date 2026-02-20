@@ -7,3 +7,7 @@
 ---
 
 I recently added to my webpage a [tutorial](https://sites.google.com/site/hpenedones2/sourcecode/usps_cnn) on how to use [torch5](http://torch5.sourceforge.net) library to train a convolutional neural network for the task of handwritten digit recognition.
+
+---
+
+**Update (February 20, 2026):** The code for this tutorial is now available at [https://github.com/hpenedones/luacnn](https://github.com/hpenedones/luacnn) and uses torch7. This tutorial was reviewed by Claude Code as of 2026.
