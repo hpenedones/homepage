@@ -423,6 +423,7 @@ footer {
   color: #232323;
   margin-bottom: 8px;
   line-height: 1.4;
+  display: inline;
 }
 
 .publication-authors {
@@ -471,7 +472,135 @@ footer {
   font-size: 11px;
   font-weight: 700;
   text-transform: uppercase;
+  margin-right: 8px;
   margin-bottom: 8px;
+  vertical-align: top;
+}
+
+/* Talk styles */
+
+.talk {
+  margin-bottom: 32px;
+  padding: 16px;
+  background-color: #f8f8f8;
+  border-left: 3px solid #C30000;
+  border-radius: 4px;
+}
+
+.talk-title {
+  font-weight: 700;
+  font-size: 15px;
+  color: #232323;
+  margin-bottom: 8px;
+  line-height: 1.4;
+  display: inline;
+}
+
+.talk-venue {
+  font-style: italic;
+  color: #666;
+  font-size: 13px;
+  margin-bottom: 8px;
+}
+
+.talk-links {
+  margin-top: 8px;
+}
+
+.talk-links a {
+  display: inline-block;
+  margin-right: 12px;
+  font-size: 13px;
+  padding: 4px 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  color: #C30000;
+  text-decoration: none;
+}
+
+.talk-links a:hover {
+  background-color: #C30000;
+  color: #fff;
+  text-decoration: none;
+  border-color: #C30000;
+}
+
+.talk-label {
+  display: inline-block;
+  background-color: #C30000;
+  color: #fff;
+  padding: 2px 8px;
+  border-radius: 3px;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  vertical-align: top;
+}
+
+/* Code project styles */
+
+.code-project {
+  margin-bottom: 32px;
+  padding: 16px;
+  background-color: #f8f8f8;
+  border-left: 3px solid #C30000;
+  border-radius: 4px;
+}
+
+.code-project-title {
+  font-weight: 700;
+  font-size: 15px;
+  color: #232323;
+  margin-bottom: 8px;
+  line-height: 1.4;
+  display: inline;
+}
+
+.code-project-description {
+  color: #555;
+  font-size: 13px;
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+.code-project-links {
+  margin-top: 8px;
+}
+
+.code-project-links a {
+  display: inline-block;
+  margin-right: 12px;
+  font-size: 13px;
+  padding: 4px 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  color: #C30000;
+  text-decoration: none;
+}
+
+.code-project-links a:hover {
+  background-color: #C30000;
+  color: #fff;
+  text-decoration: none;
+  border-color: #C30000;
+}
+
+.code-project-label {
+  display: inline-block;
+  background-color: #C30000;
+  color: #fff;
+  padding: 2px 8px;
+  border-radius: 3px;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  vertical-align: top;
 }
 
 @media print {
