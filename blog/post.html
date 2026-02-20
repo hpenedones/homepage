@@ -50,14 +50,24 @@
         }
       });
 
-      async function loadPost() {
-        const params = new URLSearchParams(window.location.search);
-        const file = params.get('file');
+      // Convert slug to markdown file path
+      // Slug format: YYYY-MM-DD-title
+      // File path: YYYY/YYYY-MM-DD-title.md
+      function slugToFilePath(slug) {
+        const year = slug.substring(0, 4);
+        return `${year}/${slug}.md`;
+      }
 
-        if (!file) {
+      async function loadPost() {
+        // Get the slug from the URL hash (format: #2023-05-30-programming-at-inductiva)
+        const slug = window.location.hash.substring(1); // Remove the # character
+
+        if (!slug) {
           document.getElementById('post-content').innerHTML = '<p>No post specified.</p>';
           return;
         }
+
+        const file = slugToFilePath(slug);
 
         try {
           const response = await fetch(file);
@@ -73,7 +83,9 @@
         }
       }
 
+      // Load post on page load and when hash changes
       loadPost();
+      window.addEventListener('hashchange', loadPost);
     </script>
 
   </body>
