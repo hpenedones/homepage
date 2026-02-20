@@ -7,11 +7,11 @@
 ---
 
 Think of an image of 800 x 600 pixel and 24 bit of color (8 bit per each RGB component). Its trivial binary representation is a sequence of 11520000 bits (800 x 600 x 24) and we can think of each picture as being a natural number.  
-  
+
 Imagine now that we write an computer program that generates all these pictures one by one, incrementing the natural number by one in each round.  
-  
+
 Running this algorithm for enough time you would eventually get:  
-  
+
 - a picture of your face  
 - a picture of you in the Moon  
 - a picture of you with Marlin Monroe and James Dean  
@@ -22,8 +22,8 @@ Running this algorithm for enough time you would eventually get:
 - pictures of all great music compositions (already written or not)   
 - pictures of Microsoft Office and Windows source code  
 - pictures/printscreens of all pages in the World Wide Web, including all the versions of Wikipedia  
-  
+
   
 Warning: don't do this at home unless you can wait for some billion years between each pair of interesting pictures you would get!  
-  
+
 Still, it's interesting to realize that you can compress all the world's information to a short and trivial program, all you have to do is add enough useless data to it!
