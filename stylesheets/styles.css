@@ -774,3 +774,48 @@ screen and (max-width: 480px) {
     text-align: center;
   }
 }
+
+/* Inspiration/Quotes styles */
+.inspiration-section {
+  margin-top: 40px;
+}
+
+.quote-card {
+  position: relative;
+  background: #fdfdfd;
+  border: 1px solid #eee;
+  padding: 24px 30px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.quote-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+}
+
+.quote-text {
+  font-family: Arvo, Georgia, serif;
+  font-style: italic;
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 12px;
+  display: block;
+}
+
+.quote-author {
+  display: block;
+  font-size: 13px;
+  color: #777;
+  text-align: right;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.quote-author::before {
+  content: "— ";
+}
