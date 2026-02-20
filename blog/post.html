@@ -59,23 +59,15 @@
       }
 
       async function loadPost() {
-        // Try to get the slug from the URL hash first (new format: #2023-05-30-programming-at-inductiva)
-        let slug = window.location.hash.substring(1); // Remove the # character
-        let file = null;
+        // Get the slug from the URL hash (format: #2023-05-30-programming-at-inductiva)
+        const slug = window.location.hash.substring(1); // Remove the # character
 
-        if (slug) {
-          // New hash-based format
-          file = slugToFilePath(slug);
-        } else {
-          // Fall back to old query parameter format for backward compatibility
-          const params = new URLSearchParams(window.location.search);
-          file = params.get('file');
-        }
-
-        if (!file) {
+        if (!slug) {
           document.getElementById('post-content').innerHTML = '<p>No post specified.</p>';
           return;
         }
+
+        const file = slugToFilePath(slug);
 
         try {
           const response = await fetch(file);
