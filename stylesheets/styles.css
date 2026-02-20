@@ -594,8 +594,9 @@ screen and (max-width: 480px) {
 }
 
 .talk-title a {
-  color: #C30000;
+  color: black;
   text-decoration: none;
+  font-weight: bold;
 }
 
 .talk-title a:hover {
@@ -655,6 +656,7 @@ screen and (max-width: 480px) {
   margin-bottom: 4px;
   line-height: 1.4;
   display: inline;
+  font-weight: bold;
 }
 
 .code-project-description {
@@ -676,7 +678,9 @@ screen and (max-width: 480px) {
   text-decoration: underline;
 }
 
-.github-icon {
+.github-icon,
+.youtube-icon,
+.pdf-icon {
   width: 24px;
   height: 24px;
   border: none;
@@ -687,8 +691,20 @@ screen and (max-width: 480px) {
   opacity: 1;
 }
 
-.code-project-link:hover .github-icon {
+.code-project-link:hover .github-icon,
+.talk-title a:hover .youtube-icon,
+.publication-link:hover .pdf-icon {
   opacity: 0.7;
+}
+
+.publication-link {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.publication-link:hover {
+  text-decoration: underline;
 }
 
 /* Blog post styles */
