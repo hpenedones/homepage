@@ -23,7 +23,7 @@ Computation is at the heart of what we do. We write computer programs for runnin
 
 In [The Pragmatic Programmer](https://pragprog.com/titles/tpp20/the-pragmatic-programmer-20th-anniversary-edition/) book, the authors talk about Tracer Bullets in the context of:
 
-> building an architectural prototype – a bare-bones skeleton of your system that is complete enough to hang future pieces of functionality on. It's exploratory, but it's not really a prototype because you are not planning to throw it away – it will become the foundation of your real system.
+> building an architectural prototype - a bare-bones skeleton of your system that is complete enough to hang future pieces of functionality on. It's exploratory, but it's not really a prototype because you are not planning to throw it away - it will become the foundation of your real system.
 
 In other words, build something simple that goes "end-to-end", as this will remove a lot of the uncertainty regarding feasibility and whether some layers or components of the system will be adequate. Once you have this: consolidate it into something leaner, cleaner and extensible. Finally, expand the system by adding more features.
 
@@ -55,7 +55,7 @@ The last stage is one in which the programmer becomes able to solve complex prob
 
 ![Code complexity as a function of programmer's experience](../../images/code_complexity.png)
 
-**Figure 1** – Code complexity as a function of programmer's experience [original source: unknown]
+**Figure 1** - Code complexity as a function of programmer's experience [original source: unknown]
 
 The take-home message here is twofold:
 
@@ -71,7 +71,7 @@ If there is a guiding principle that will guarantee you a huge increase in code 
 
 > Every piece of knowledge must have a single, unambiguous, authoritative representation within a system.
 >
-> – Andy Hunt and Dave Thomas, The Pragmatic Programmer.
+> - Andy Hunt and Dave Thomas, The Pragmatic Programmer.
 
 As an example, you should always try to avoid "copy-pasting" code from one place to another, and make an effort to consolidate logic into a single location (e.g., a simple function), that can be reused in multiple places. If your code has a lot of duplication, something is wrong, and it should be refactored.
 
