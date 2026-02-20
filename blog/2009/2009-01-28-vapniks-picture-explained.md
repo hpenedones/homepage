@@ -6,11 +6,7 @@
 
 ---
 
-[
-
-![](/images/blogger-AVvXsEhNsDKM24Tb-vapnik.jpg)
-
-](/images/blogger-AVvXsEhNsDKM24Tb-vapnik.jpg)  
+[![](/images/blogger-AVvXsEhNsDKM24Tb-vapnik.jpg)](/images/blogger-AVvXsEhNsDKM24Tb-vapnik.jpg)  
   
 This is an extremely geek picture! :) Let's try to explain it:  
   
@@ -18,11 +14,7 @@ First of all, as many of you know, the gentleman in the picture is [Prof. Vladim
   
 Then we notice the sentence in the board: it resembles the famous "[All your base are belong to us](http://en.wikipedia.org/wiki/All_your_base_are_belong_to_us)"! This is a piece of geek culture that emerged after a "broken English" translation of a Japanese video game for Sega Mega Drive .  
   
-[
-
-![](/images/blogger-AVvXsEg1zC1k8Ig3-Aybabtu.png)
-
-](/images/blogger-AVvXsEg1zC1k8Ig3-Aybabtu.png)  
+[![](/images/blogger-AVvXsEg1zC1k8Ig3-Aybabtu.png)](/images/blogger-AVvXsEg1zC1k8Ig3-Aybabtu.png)  
   
 Wait, but they replaced the word "Base" by "Bayes"!?  
 Yes, that [Bayes](http://en.wikipedia.org/wiki/Thomas_Bayes), the British mathematician known for the [Bayes' theorem](http://en.wikipedia.org/wiki/Bayes%27_theorem).  
@@ -30,11 +22,9 @@ Okay, seems fair enough, we are dealing with people from statistics...
   
 By the moment we think things can not get more geeky, we realize there is scary inequality written on the top of the white board:  
   
-[
+[![](/images/blogger-AVvXsEg9A35Asgbt-bound.png)](/images/blogger-AVvXsEg9A35Asgbt-bound.png)
 
-![](/images/blogger-AVvXsEg9A35Asgbt-bound.png)
-
-](/images/blogger-AVvXsEg9A35Asgbt-bound.png)My goodness, what's this?! Okay, that's when things get really technical:  
+My goodness, what's this?! Okay, that's when things get really technical:  
 This is a probabilistic bound for the expected risk of a classifier under the ERM framework. In simple terms, it relates the classifier's expected test error with the training error on a dataset of size l and in which the cardinality of the set of loss functions is N.  
 If I'm not mistaken, the bound holds with probability (1 - eta) and applies only to loss functions bounded above by 1.  
   
