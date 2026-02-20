@@ -25,13 +25,12 @@ jobs:
       - name: Check links in HTML and Markdown files
         uses: lycheeverse/lychee-action@v1
         with:
-          # Check all HTML and markdown files
+          # Check files defined in .lychee.toml
           args: |
             --verbose
             --no-progress
             --config .lychee.toml
-            '**/*.html'
-            '**/*.md'
+            .
 
           # Fail the workflow if broken links are found
           fail: true
@@ -59,29 +58,35 @@ jobs:
 
             This issue was automatically created by the [broken-links workflow](${workflowFileUrl}).`;
 
-            // Check if an issue already exists
-            const issues = await github.rest.issues.listForRepo({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              state: 'open',
-              labels: ['broken-links']
-            });
+            try {
+              // Check if an issue already exists
+              const issues = await github.rest.issues.listForRepo({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                state: 'open',
+                labels: ['broken-links']
+              });
 
-            if (issues.data.length === 0) {
-              // Create new issue
-              await github.rest.issues.create({
-                owner: context.repo.owner,
-                repo: context.repo.repo,
-                title: issue_title,
-                body: issue_body,
-                labels: ['broken-links', 'automated']
-              });
-            } else {
-              // Add comment to existing issue
-              await github.rest.issues.createComment({
-                owner: context.repo.owner,
-                repo: context.repo.repo,
-                issue_number: issues.data[0].number,
-                body: `Another broken link check failed.\n\n**Workflow Run:** ${workflowUrl}`
-              });
+              if (issues.data.length === 0) {
+                // Create new issue
+                await github.rest.issues.create({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  title: issue_title,
+                  body: issue_body,
+                  labels: ['broken-links', 'automated']
+                });
+              } else {
+                // Add comment to existing issue
+                await github.rest.issues.createComment({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  issue_number: issues.data[0].number,
+                  body: `Another broken link check failed.\n\n**Workflow Run:** ${workflowUrl}`
+                });
+              }
+            } catch (error) {
+              // Issues might be disabled for this repository
+              console.log('Could not create issue. Issues may be disabled for this repository.');
+              console.log(`Error: ${error.message}`);
             }
