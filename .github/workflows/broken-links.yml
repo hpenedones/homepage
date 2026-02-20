@@ -25,12 +25,12 @@ jobs:
       - name: Check links in HTML and Markdown files
         uses: lycheeverse/lychee-action@v1
         with:
-          # Check files defined in .lychee.toml
+          # Check HTML and Markdown files
           args: |
             --verbose
             --no-progress
             --config .lychee.toml
-            .
+            '**/*.html' '**/*.md'
 
           # Fail the workflow if broken links are found
           fail: true

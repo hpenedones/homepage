@@ -39,8 +39,8 @@ exclude = [
   "x.com",
 ]
 
-# Include these file extensions in the check
-include = ["**/*.html", "**/*.md"]
+# File patterns are specified in the workflow args instead of here
+# to avoid regex parsing issues
 
 # Exclude specific paths or files
 exclude_path = [
