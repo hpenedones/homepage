@@ -603,6 +603,32 @@ footer {
   vertical-align: top;
 }
 
+/* Blog post styles */
+
+.blog-post {
+  margin-bottom: 24px;
+  padding: 12px;
+  background-color: #f8f8f8;
+  border-left: 3px solid #5A6C7D;
+  border-radius: 4px;
+}
+
+.blog-post-title {
+  font-weight: 700;
+  font-size: 15px;
+  color: #232323;
+  line-height: 1.4;
+  display: inline;
+  margin-bottom: 0px;
+}
+
+.blog-post-date {
+  color: #666;
+  font-size: 13px;
+  margin-top: 4px;
+  margin-bottom: 0px;
+}
+
 @media print {
   body {
     padding:0.4in;

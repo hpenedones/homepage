@@ -100,16 +100,15 @@
             yearHeader.textContent = postYear;
             yearHeader.style.marginTop = currentYear === null ? '0' : '40px';
             yearHeader.style.marginBottom = '20px';
-            yearHeader.style.borderBottom = '2px solid #ccc';
-            yearHeader.style.paddingBottom = '10px';
             container.appendChild(yearHeader);
             currentYear = postYear;
           }
 
           const postDiv = document.createElement('div');
-          postDiv.style.marginBottom = '40px';
+          postDiv.className = 'blog-post';
 
-          const title = document.createElement('h4');
+          const title = document.createElement('div');
+          title.className = 'blog-post-title';
           const titleLink = document.createElement('a');
           // Generate clean URL slug from filename
           const filename = post.file.split('/')[1]; // Get just the filename without year folder
@@ -118,10 +117,8 @@
           titleLink.textContent = post.title;
           title.appendChild(titleLink);
 
-          const date = document.createElement('p');
-          date.style.color = '#666';
-          date.style.fontSize = '14px';
-          date.style.marginTop = '-10px';
+          const date = document.createElement('div');
+          date.className = 'blog-post-date';
           date.textContent = post.date;
 
           postDiv.appendChild(title);
