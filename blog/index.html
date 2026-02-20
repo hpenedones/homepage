@@ -38,48 +38,49 @@
       // Imported from aboutintelligence.blogspot.com (2008-2013)
       // New posts should be created under year folders (e.g., 2026/)
       const posts = [
-        { file: '2012/2012-11-20-machine-learning-workshop-idiap-epfl-2012.md', title: 'Machine Learning Workshop - Idiap EPFL 2012', date: '2012-11-20', preview: 'Yesterday I attended to this workshop at EPFL:' },
-        { file: '2012/2012-11-12-active-appearance-models.md', title: 'Active Appearance Models', date: '2012-11-12', preview: 'Lately, I have been working with Deformable Models and I am surprised by how well they can work.' },
-        { file: '2010/2010-11-12-the-ai-set-of-functions.md', title: 'The AI set of functions', date: '2010-11-12', preview: 'I recently read an article from Y. Bengio and Y. LeCun named "Scaling Learning Algorithms to AI". You can also find it as a book chapter in' },
-        { file: '2010/2010-11-08-tutorial-handwritten-digit-recognition-with-convolutional-neural-networks.md', title: 'Tutorial: handwritten digit recognition with convolutional neural networks', date: '2010-11-08', preview: 'I recently added to my webpage a tutorial on how to use torch5 library to train a convolutional neural network for the task of handwritten digit' },
-        { file: '2010/2010-10-23-nyc-machine-learning-symposium-2010.md', title: 'NYC Machine Learning Symposium 2010', date: '2010-10-23', preview: 'The event took place yesterday at the New York Academy of Sciences, a building right next to the World Trade Center. The views from the 40th floor' },
-        { file: '2010/2010-07-06-machine-learning-recent-sites.md', title: 'Machine Learning recent sites', date: '2010-07-06', preview: 'In the last few months (in which I haven\'t posted in this blog) there were a few interesting web platforms related to Machine Learning poping-up,' },
-        { file: '2009/2009-12-08-optimism-as-artificial-intelligence-pioneers-reunite.md', title: 'Optimism as Artificial Intelligence Pioneers Reunite', date: '2009-12-08', preview: 'Just a short link to an article of the New York Times about AI.' },
-        { file: '2009/2009-12-07-tedx-geneva.md', title: 'TEDx Geneva', date: '2009-12-07', preview: 'Today I assisted to the first edition of TEDx Geneva. This was a locally-organized event following the same spirit of the original TED talks: "ideas' },
-        { file: '2009/2009-11-11-choosing-my-tools.md', title: 'Choosing my tools', date: '2009-11-11', preview: 'I\'m doing research in the fields of Machine Learning and Computer Vision, so each time we have an idea for a new algorithm, I have to write code,' },
-        { file: '2009/2009-11-01-open-phd-and-postdoc-positions.md', title: 'Open PhD and Postdoc positions', date: '2009-11-01', preview: 'My supervisor is leading a new European project called MASH, which stands for "Massive Sets of Heuristics". There are open positions here in' },
-        { file: '2009/2009-10-14-gmail-machine-learning.md', title: 'Gmail Machine Learning', date: '2009-10-14', preview: 'I just quickly tried the new Gmail Labs feature "Got the wrong Bob"? and it actually works quite nicely! I put some email addresses of family' },
-        { file: '2009/2009-10-05-schools-kill-creativity.md', title: 'Schools kill creativity', date: '2009-10-05', preview: 'My good friend Miguel called my attention to a TED talk that you might also find interesting:' },
-        { file: '2009/2009-08-02-my-ideal-society.md', title: '(My) ideal society', date: '2009-08-02', preview: 'Each individual is respected as such and has the freedom and the means to pursue its own interests without having to harm the others.' },
-        { file: '2009/2009-07-22-personal-productivity-happiness-and-optimization-algorithms.md', title: 'Personal productivity, happiness and optimization algorithms', date: '2009-07-22', preview: 'I spend lots of time wondering about the best ways to be both more productive and happy. Curiously, I\'m coming to the conclusion that this is' },
-        { file: '2009/2009-07-22-increasing-the-scope.md', title: 'Increasing the scope', date: '2009-07-22', preview: 'In the past it happened that I didn\'t publish some potentially interesting thoughts in this blog, just because they didn\'t exactly fit the "about' },
-        { file: '2009/2009-05-06-machine-learning-to-ai.md', title: 'Machine Learning to AI', date: '2009-05-06', preview: 'John Langford wrote a very interesting post on the failures of Artificial Intelligence research and why Machine Learning has been a safer bet. Read' },
-        { file: '2009/2009-04-01-google-cadie-vs-wolfram-alpha.md', title: 'Google CADIE vs Wolfram Alpha', date: '2009-04-01', preview: 'Google already has a tradition of April fool\'s jokes: this year they are introducing an Artificial Intelligence brain!' },
-        { file: '2009/2009-03-28-machine-learning-artwork.md', title: 'Machine Learning artwork', date: '2009-03-28', preview: 'Today I tried out a great site to generate tag clouds, it is called wordle.net. I rendered some images just by copy-pasting the text from wikipedia' },
-        { file: '2009/2009-03-18-acm-paris-kanellakis-theory-and-practice-award-2008.md', title: 'ACM Paris Kanellakis Theory and Practice Award 2008', date: '2009-03-18', preview: 'The 2008 ACM Paris Kanellakis Theory and Practice Award was awarded to Corinna Cortes and Vladimir Vapnik "for the development of Support Vector' },
-        { file: '2009/2009-02-06-social-features-on-this-blog.md', title: 'Social features on this blog', date: '2009-02-06', preview: 'The readers of this blog can now:' },
-        { file: '2009/2009-01-28-computer-vision-vs-computer-graphics.md', title: 'Computer Vision vs Computer Graphics', date: '2009-01-28', preview: 'If I had to explain what computer vision is all about, in just one snapshot, I would show you this:' },
-        { file: '2009/2009-01-08-stationary-features-google-tech-talk.md', title: 'Stationary Features - Google Tech Talk', date: '2009-01-08', preview: 'François Fleuret, my PhD advisor, recently gave a talk about object detection at Google (Zurich offices).' },
-        { file: '2008/2008-09-24-machine-learning-summer-school.md', title: 'Machine Learning Summer School', date: '2008-09-24', preview: 'Held in Ile de Ré (France), 1-15th September, this school counted with some famous names within the Machine Learning and Artificial Intelligence' },
-        { file: '2008/2008-07-22-icvss-2008.md', title: 'ICVSS 2008', date: '2008-07-22', preview: 'Last week I attended the International Computer Vision Summer School in Sicily, Italy. The main topics were Reconstruction and Recognition. I think' },
-        { file: '2008/2008-07-07-moved-to-switzerland.md', title: 'Moved to Switzerland', date: '2008-07-07', preview: 'Since the 1st of July, I am a PhD student at Idiap Research Institute and the Ecole Polytechnique Fédérale de Lausanne.' },
-        { file: '2008/2008-05-31-generating-all-possible-pictures.md', title: 'Generating all possible pictures', date: '2008-05-31', preview: 'Think of an image of 800 x 600 pixel and 24 bit of color (8 bit per each RGB component). Its trivial binary representation is a sequence of 11520000' },
-        { file: '2008/2008-05-29-monkey-with-robotic-arm.md', title: 'Monkey with robotic arm', date: '2008-05-29', preview: 'I\'m not sure it\'s recent news, because there is a public release from as back as 2005, but I just came across this video of a monkey eating using a' },
-        { file: '2008/2008-05-13-the-amazing-intelligence-of-crows.md', title: 'The amazing intelligence of crows', date: '2008-05-13', preview: 'In this 10min TED talk, Joshua Klein talks about crows and how they are incredibly good learners.' },
-        { file: '2008/2008-05-13-how-ant-colonies-get-things-done.md', title: 'How Ant Colonies Get Things Done', date: '2008-05-13', preview: 'Here you have a nice and very informative Google Tech Talk by Dr. Deborah Gordon on how ant colonies work without any central control:' },
-        { file: '2008/2008-05-09-science-in-summer-time.md', title: 'Science in Summer time', date: '2008-05-09', preview: 'If everything goes as planned this year I am attending two Summer Schools.' },
-        { file: '2008/2008-04-14-how-difficult-is-vision.md', title: 'How difficult is Vision?', date: '2008-04-14', preview: 'Lately I have been wondering about the problem of Vision and how difficult it should be compared to problem of Artificial General Intelligence.' },
-        { file: '2008/2008-03-12-videolecturesnet.md', title: 'Videolectures.net', date: '2008-03-12', preview: 'A fast recommendation to the people interested in assisting to video talks in their computers:' },
-        { file: '2008/2008-02-22-the-first-conference-on-artificial-general-intelligence-agi-08.md', title: 'The First Conference on Artificial General Intelligence (AGI-08)', date: '2008-02-22', preview: 'I will not be there, but I am looking forward to seeing what comes out of it.' },
-        { file: '2008/2008-02-13-again-on-measuring-machine-intelligence.md', title: 'Again on Measuring Machine Intelligence', date: '2008-02-13', preview: 'I have recently found two tech reports written by Shane Legg and Marcus Hutter (IDSIA, Lugano, Switzerland) in which they make very interesting' },
-        { file: '2008/2008-02-11-nars-non-axiomatic-reasoning-system.md', title: 'NARS: Non-axiomatic Reasoning System', date: '2008-02-11', preview: 'Pei-Wang\'s well-defined approach to Artificial General Intelligence takes as basic premises the fact that the agent has limited time and memory' },
-        { file: '2008/2008-02-03-brain-science-podcast.md', title: 'Brain Science Podcast', date: '2008-02-03', preview: 'Another suggestion of a podcast, this time in the field of neuroscience. It features interviews and book reviews. Have a look at:' },
-        { file: '2008/2008-01-30-john-searle-beyond-dualism.md', title: 'John Searle: Beyond Dualism', date: '2008-01-30', preview: 'It\'s now time to make the first suggestion about philosophy of mind.And who else could it be if not the well-known american philosopher John Searle' },
-        { file: '2008/2008-01-30-on-intelligence-by-jeff-hawkins.md', title: 'On Intelligence by Jeff Hawkins', date: '2008-01-30', preview: 'I would like to recommend this book by Jeff Hawkins, in which the author tries to create a theory about the neocortex.' },
-        { file: '2008/2008-01-28-measuring-intelligence.md', title: 'Measuring Intelligence', date: '2008-01-28', preview: 'In order to develop artificial intelligence further, it would be important to have a formal and quantitative way to measure intelligence of an' },
-        { file: '2008/2008-01-15-artificial-general-intelligence.md', title: 'Artificial General Intelligence', date: '2008-01-15', preview: 'Back in 1956, the founders of the new AI research field (John McCarthy, Marvin Minsky, Allen Newell and Hebert Simon) were deeply convinced that in' },
-        { file: '2008/2008-01-15-talking-robots.md', title: 'Talking Robots', date: '2008-01-15', preview: 'Talking Robots is a "podcast featuring interviews with high-profile professionals in Robotics and Artificial Intelligence for an inside view on the' },
-        { file: '2008/2008-01-15-welcome-to-about-intelligence.md', title: 'Welcome to "About Intelligence"', date: '2008-01-15', preview: 'Welcome to the blog where you can find ideas, comments and reviews about Artificial Intelligence, Robotics, Neuroscience, Consciousness and' }
+        { file: '2012/2012-11-20-machine-learning-workshop-idiap-epfl-2012.md', title: 'Machine Learning Workshop - Idiap EPFL 2012', date: '2012-11-20' },
+        { file: '2012/2012-11-12-active-appearance-models.md', title: 'Active Appearance Models', date: '2012-11-12' },
+        { file: '2010/2010-11-12-the-ai-set-of-functions.md', title: 'The AI set of functions', date: '2010-11-12' },
+        { file: '2010/2010-11-08-tutorial-handwritten-digit-recognition-with-convolutional-neural-networks.md', title: 'Tutorial: handwritten digit recognition with convolutional neural networks', date: '2010-11-08' },
+        { file: '2010/2010-10-23-nyc-machine-learning-symposium-2010.md', title: 'NYC Machine Learning Symposium 2010', date: '2010-10-23' },
+        { file: '2010/2010-07-06-machine-learning-recent-sites.md', title: 'Machine Learning recent sites', date: '2010-07-06' },
+        { file: '2009/2009-12-08-optimism-as-artificial-intelligence-pioneers-reunite.md', title: 'Optimism as Artificial Intelligence Pioneers Reunite', date: '2009-12-08' },
+        { file: '2009/2009-12-07-tedx-geneva.md', title: 'TEDx Geneva', date: '2009-12-07' },
+        { file: '2009/2009-11-11-choosing-my-tools.md', title: 'Choosing my tools', date: '2009-11-11' },
+        { file: '2009/2009-11-01-open-phd-and-postdoc-positions.md', title: 'Open PhD and Postdoc positions', date: '2009-11-01' },
+        { file: '2009/2009-10-14-gmail-machine-learning.md', title: 'Gmail Machine Learning', date: '2009-10-14' },
+        { file: '2009/2009-10-05-schools-kill-creativity.md', title: 'Schools kill creativity', date: '2009-10-05' },
+        { file: '2009/2009-08-02-my-ideal-society.md', title: '(My) ideal society', date: '2009-08-02' },
+        { file: '2009/2009-07-22-personal-productivity-happiness-and-optimization-algorithms.md', title: 'Personal productivity, happiness and optimization algorithms', date: '2009-07-22' },
+        { file: '2009/2009-07-22-increasing-the-scope.md', title: 'Increasing the scope', date: '2009-07-22' },
+        { file: '2009/2009-05-06-machine-learning-to-ai.md', title: 'Machine Learning to AI', date: '2009-05-06' },
+        { file: '2009/2009-04-01-google-cadie-vs-wolfram-alpha.md', title: 'Google CADIE vs Wolfram Alpha', date: '2009-04-01' },
+        { file: '2009/2009-03-28-machine-learning-artwork.md', title: 'Machine Learning artwork', date: '2009-03-28' },
+        { file: '2009/2009-03-18-acm-paris-kanellakis-theory-and-practice-award-2008.md', title: 'ACM Paris Kanellakis Theory and Practice Award 2008', date: '2009-03-18' },
+        { file: '2009/2009-02-06-social-features-on-this-blog.md', title: 'Social features on this blog', date: '2009-02-06' },
+        { file: '2009/2009-01-28-vapniks-picture-explained.md', title: 'Vapnik\'s picture explained', date: '2009-01-28' },
+        { file: '2009/2009-01-28-computer-vision-vs-computer-graphics.md', title: 'Computer Vision vs Computer Graphics', date: '2009-01-28' },
+        { file: '2009/2009-01-08-stationary-features-google-tech-talk.md', title: 'Stationary Features - Google Tech Talk', date: '2009-01-08' },
+        { file: '2008/2008-09-24-machine-learning-summer-school.md', title: 'Machine Learning Summer School', date: '2008-09-24' },
+        { file: '2008/2008-07-22-icvss-2008.md', title: 'ICVSS 2008', date: '2008-07-22' },
+        { file: '2008/2008-07-07-moved-to-switzerland.md', title: 'Moved to Switzerland', date: '2008-07-07' },
+        { file: '2008/2008-05-31-generating-all-possible-pictures.md', title: 'Generating all possible pictures', date: '2008-05-31' },
+        { file: '2008/2008-05-29-monkey-with-robotic-arm.md', title: 'Monkey with robotic arm', date: '2008-05-29' },
+        { file: '2008/2008-05-13-the-amazing-intelligence-of-crows.md', title: 'The amazing intelligence of crows', date: '2008-05-13' },
+        { file: '2008/2008-05-13-how-ant-colonies-get-things-done.md', title: 'How Ant Colonies Get Things Done', date: '2008-05-13' },
+        { file: '2008/2008-05-09-science-in-summer-time.md', title: 'Science in Summer time', date: '2008-05-09' },
+        { file: '2008/2008-04-14-how-difficult-is-vision.md', title: 'How difficult is Vision?', date: '2008-04-14' },
+        { file: '2008/2008-03-12-videolecturesnet.md', title: 'Videolectures.net', date: '2008-03-12' },
+        { file: '2008/2008-02-22-the-first-conference-on-artificial-general-intelligence-agi-08.md', title: 'The First Conference on Artificial General Intelligence (AGI-08)', date: '2008-02-22' },
+        { file: '2008/2008-02-13-again-on-measuring-machine-intelligence.md', title: 'Again on Measuring Machine Intelligence', date: '2008-02-13' },
+        { file: '2008/2008-02-11-nars-non-axiomatic-reasoning-system.md', title: 'NARS: Non-axiomatic Reasoning System', date: '2008-02-11' },
+        { file: '2008/2008-02-03-brain-science-podcast.md', title: 'Brain Science Podcast', date: '2008-02-03' },
+        { file: '2008/2008-01-30-john-searle-beyond-dualism.md', title: 'John Searle: Beyond Dualism', date: '2008-01-30' },
+        { file: '2008/2008-01-30-on-intelligence-by-jeff-hawkins.md', title: 'On Intelligence by Jeff Hawkins', date: '2008-01-30' },
+        { file: '2008/2008-01-28-measuring-intelligence.md', title: 'Measuring Intelligence', date: '2008-01-28' },
+        { file: '2008/2008-01-15-artificial-general-intelligence.md', title: 'Artificial General Intelligence', date: '2008-01-15' },
+        { file: '2008/2008-01-15-talking-robots.md', title: 'Talking Robots', date: '2008-01-15' },
+        { file: '2008/2008-01-15-welcome-to-about-intelligence.md', title: 'Welcome to "About Intelligence"', date: '2008-01-15' }
       ];
 
       function loadBlogPosts() {
@@ -121,17 +122,6 @@
 
           postDiv.appendChild(title);
           postDiv.appendChild(date);
-
-          // Display preview text from pre-computed data
-          if (post.preview) {
-            const previewP = document.createElement('p');
-            previewP.style.color = '#555';
-            previewP.style.fontSize = '14px';
-            previewP.style.marginTop = '10px';
-            previewP.style.fontStyle = 'italic';
-            previewP.textContent = post.preview + '...';
-            postDiv.appendChild(previewP);
-          }
 
           container.appendChild(postDiv);
         }
