@@ -1,135 +1,138 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Hugo Penedones - Blog</title>
 
-    <link rel="stylesheet" href="../stylesheets/styles.css">
-    <link rel="stylesheet" href="../stylesheets/pygment_trac.css">
-    <script src="../javascripts/scale.fix.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/marked@11.1.1/marked.min.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!--[if lt IE 9]>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <title>Hugo Penedones - Blog</title>
+
+  <link rel="stylesheet" href="../stylesheets/styles.css">
+  <link rel="stylesheet" href="../stylesheets/pygment_trac.css">
+  <script src="../javascripts/scale.fix.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/marked@11.1.1/marked.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1 class="header">Hugo Penedones</h1>
+</head>
 
-        <img src="http://www.gravatar.com/avatar/bec688bb67564e72dc34cad9575c686d?s=120"/>
-        <p><a href="../index.html">← Back to homepage</a></p>
-      </header>
-      <section>
-        <h2>Blog</h2>
-        <div id="blog-posts">
-          <p>Loading blog posts...</p>
-        </div>
-      </section>
-      <footer>
-      </footer>
-    </div>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+<body>
+  <div class="wrapper">
+    <header>
+      <h1 class="header">Hugo Penedones</h1>
 
-    <script>
-      // Configuration: list of blog posts (newest first)
-      // Imported from aboutintelligence.blogspot.com (2008-2013)
-      // New posts should be created under year folders (e.g., 2026/)
-      const posts = [
-        { file: '2025/2025-11-07-the-future-of-ai-is-physical-simulation-is-key.md', title: 'The Future of AI is Physical: Simulation is Key', date: '2025-11-07' },
-        { file: '2023/2023-05-30-programming-at-inductiva.md', title: 'Programming Guidelines at Inductiva', date: '2023-05-30' },
-        { file: '2012/2012-11-20-machine-learning-workshop-idiap-epfl-2012.md', title: 'Machine Learning Workshop - Idiap EPFL 2012', date: '2012-11-20' },
-        { file: '2012/2012-11-12-active-appearance-models.md', title: 'Active Appearance Models', date: '2012-11-12' },
-        { file: '2010/2010-11-12-the-ai-set-of-functions.md', title: 'The AI set of functions', date: '2010-11-12' },
-        { file: '2010/2010-11-08-tutorial-handwritten-digit-recognition-with-convolutional-neural-networks.md', title: 'Tutorial: handwritten digit recognition with convolutional neural networks', date: '2010-11-08' },
-        { file: '2010/2010-10-23-nyc-machine-learning-symposium-2010.md', title: 'NYC Machine Learning Symposium 2010', date: '2010-10-23' },
-        { file: '2010/2010-07-06-machine-learning-recent-sites.md', title: 'Machine Learning recent sites', date: '2010-07-06' },
-        { file: '2009/2009-12-08-optimism-as-artificial-intelligence-pioneers-reunite.md', title: 'Optimism as Artificial Intelligence Pioneers Reunite', date: '2009-12-08' },
-        { file: '2009/2009-12-07-tedx-geneva.md', title: 'TEDx Geneva', date: '2009-12-07' },
-        { file: '2009/2009-11-11-choosing-my-tools.md', title: 'Choosing my tools', date: '2009-11-11' },
-        { file: '2009/2009-11-01-open-phd-and-postdoc-positions.md', title: 'Open PhD and Postdoc positions', date: '2009-11-01' },
-        { file: '2009/2009-10-14-gmail-machine-learning.md', title: 'Gmail Machine Learning', date: '2009-10-14' },
-        { file: '2009/2009-10-05-schools-kill-creativity.md', title: 'Schools kill creativity', date: '2009-10-05' },
-        { file: '2009/2009-08-02-my-ideal-society.md', title: '(My) ideal society', date: '2009-08-02' },
-        { file: '2009/2009-07-22-personal-productivity-happiness-and-optimization-algorithms.md', title: 'Personal productivity, happiness and optimization algorithms', date: '2009-07-22' },
-        { file: '2009/2009-07-22-increasing-the-scope.md', title: 'Increasing the scope', date: '2009-07-22' },
-        { file: '2009/2009-05-06-machine-learning-to-ai.md', title: 'Machine Learning to AI', date: '2009-05-06' },
-        { file: '2009/2009-04-01-google-cadie-vs-wolfram-alpha.md', title: 'Google CADIE vs Wolfram Alpha', date: '2009-04-01' },
-        { file: '2009/2009-03-28-machine-learning-artwork.md', title: 'Machine Learning artwork', date: '2009-03-28' },
-        { file: '2009/2009-03-18-acm-paris-kanellakis-theory-and-practice-award-2008.md', title: 'ACM Paris Kanellakis Theory and Practice Award 2008', date: '2009-03-18' },
-        { file: '2009/2009-01-28-vapniks-picture-explained.md', title: 'Vapnik\'s picture explained', date: '2009-01-28' },
-        { file: '2009/2009-01-28-computer-vision-vs-computer-graphics.md', title: 'Computer Vision vs Computer Graphics', date: '2009-01-28' },
-        { file: '2009/2009-01-08-stationary-features-google-tech-talk.md', title: 'Stationary Features - Google Tech Talk', date: '2009-01-08' },
-        { file: '2008/2008-09-24-machine-learning-summer-school.md', title: 'Machine Learning Summer School', date: '2008-09-24' },
-        { file: '2008/2008-07-22-icvss-2008.md', title: 'ICVSS 2008', date: '2008-07-22' },
-        { file: '2008/2008-07-07-moved-to-switzerland.md', title: 'Moved to Switzerland', date: '2008-07-07' },
-        { file: '2008/2008-05-31-generating-all-possible-pictures.md', title: 'Generating all possible pictures', date: '2008-05-31' },
-        { file: '2008/2008-05-29-monkey-with-robotic-arm.md', title: 'Monkey with robotic arm', date: '2008-05-29' },
-        { file: '2008/2008-05-13-the-amazing-intelligence-of-crows.md', title: 'The amazing intelligence of crows', date: '2008-05-13' },
-        { file: '2008/2008-05-13-how-ant-colonies-get-things-done.md', title: 'How Ant Colonies Get Things Done', date: '2008-05-13' },
-        { file: '2008/2008-05-09-science-in-summer-time.md', title: 'Science in Summer time', date: '2008-05-09' },
-        { file: '2008/2008-04-14-how-difficult-is-vision.md', title: 'How difficult is Vision?', date: '2008-04-14' },
-        { file: '2008/2008-03-12-videolecturesnet.md', title: 'Videolectures.net', date: '2008-03-12' },
-        { file: '2008/2008-02-22-the-first-conference-on-artificial-general-intelligence-agi-08.md', title: 'The First Conference on Artificial General Intelligence (AGI-08)', date: '2008-02-22' },
-        { file: '2008/2008-02-13-again-on-measuring-machine-intelligence.md', title: 'Again on Measuring Machine Intelligence', date: '2008-02-13' },
-        { file: '2008/2008-02-11-nars-non-axiomatic-reasoning-system.md', title: 'NARS: Non-axiomatic Reasoning System', date: '2008-02-11' },
-        { file: '2008/2008-02-03-brain-science-podcast.md', title: 'Brain Science Podcast', date: '2008-02-03' },
-        { file: '2008/2008-01-30-john-searle-beyond-dualism.md', title: 'John Searle: Beyond Dualism', date: '2008-01-30' },
-        { file: '2008/2008-01-30-on-intelligence-by-jeff-hawkins.md', title: 'On Intelligence by Jeff Hawkins', date: '2008-01-30' },
-        { file: '2008/2008-01-28-measuring-intelligence.md', title: 'Measuring Intelligence', date: '2008-01-28' },
-        { file: '2008/2008-01-15-artificial-general-intelligence.md', title: 'Artificial General Intelligence', date: '2008-01-15' },
-        { file: '2008/2008-01-15-talking-robots.md', title: 'Talking Robots', date: '2008-01-15' },
-        { file: '2008/2008-01-15-welcome-to-about-intelligence.md', title: 'Welcome to "About Intelligence"', date: '2008-01-15' }
-      ];
+      <img src="http://www.gravatar.com/avatar/bec688bb67564e72dc34cad9575c686d?s=120" />
+      <p><a href="../index.html">← Back to homepage</a></p>
+    </header>
+    <section>
+      <h2>Blog</h2>
+      <div id="blog-posts">
+        <p>Loading blog posts...</p>
+      </div>
+    </section>
+    <footer>
+    </footer>
+  </div>
+  <!--[if !IE]><script>fixScale(document);</script><![endif]-->
 
-      function loadBlogPosts() {
-        const container = document.getElementById('blog-posts');
-        container.innerHTML = '';
+  <script>
+    // Configuration: list of blog posts (newest first)
+    // Imported from aboutintelligence.blogspot.com (2008-2013)
+    // New posts should be created under year folders (e.g., 2026/)
+    const posts = [
+      { file: '2025/2025-11-07-the-future-of-ai-is-physical-simulation-is-key.md', title: 'The Future of AI is Physical: Simulation is Key', date: '2025-11-07' },
+      { file: '2023/2023-05-30-programming-principles.md', title: 'Programming Principles', date: '2023-05-30' },
+      { file: '2012/2012-11-20-machine-learning-workshop-idiap-epfl-2012.md', title: 'Machine Learning Workshop - Idiap EPFL 2012', date: '2012-11-20' },
+      { file: '2012/2012-11-12-active-appearance-models.md', title: 'Active Appearance Models', date: '2012-11-12' },
+      { file: '2010/2010-11-12-the-ai-set-of-functions.md', title: 'The AI set of functions', date: '2010-11-12' },
+      { file: '2010/2010-11-08-tutorial-handwritten-digit-recognition-with-convolutional-neural-networks.md', title: 'Tutorial: handwritten digit recognition with convolutional neural networks', date: '2010-11-08' },
+      { file: '2010/2010-10-23-nyc-machine-learning-symposium-2010.md', title: 'NYC Machine Learning Symposium 2010', date: '2010-10-23' },
+      { file: '2010/2010-07-06-machine-learning-recent-sites.md', title: 'Machine Learning recent sites', date: '2010-07-06' },
+      { file: '2009/2009-12-08-optimism-as-artificial-intelligence-pioneers-reunite.md', title: 'Optimism as Artificial Intelligence Pioneers Reunite', date: '2009-12-08' },
+      { file: '2009/2009-12-07-tedx-geneva.md', title: 'TEDx Geneva', date: '2009-12-07' },
+      { file: '2009/2009-11-11-choosing-my-tools.md', title: 'Choosing my tools', date: '2009-11-11' },
+      { file: '2009/2009-11-01-open-phd-and-postdoc-positions.md', title: 'Open PhD and Postdoc positions', date: '2009-11-01' },
+      { file: '2009/2009-10-14-gmail-machine-learning.md', title: 'Gmail Machine Learning', date: '2009-10-14' },
+      { file: '2009/2009-10-05-schools-kill-creativity.md', title: 'Schools kill creativity', date: '2009-10-05' },
+      { file: '2009/2009-08-02-my-ideal-society.md', title: '(My) ideal society', date: '2009-08-02' },
+      { file: '2009/2009-07-22-personal-productivity-happiness-and-optimization-algorithms.md', title: 'Personal productivity, happiness and optimization algorithms', date: '2009-07-22' },
+      { file: '2009/2009-07-22-increasing-the-scope.md', title: 'Increasing the scope', date: '2009-07-22' },
+      { file: '2009/2009-05-06-machine-learning-to-ai.md', title: 'Machine Learning to AI', date: '2009-05-06' },
+      { file: '2009/2009-04-01-google-cadie-vs-wolfram-alpha.md', title: 'Google CADIE vs Wolfram Alpha', date: '2009-04-01' },
+      { file: '2009/2009-03-28-machine-learning-artwork.md', title: 'Machine Learning artwork', date: '2009-03-28' },
+      { file: '2009/2009-03-18-acm-paris-kanellakis-theory-and-practice-award-2008.md', title: 'ACM Paris Kanellakis Theory and Practice Award 2008', date: '2009-03-18' },
+      { file: '2009/2009-01-28-vapniks-picture-explained.md', title: 'Vapnik\'s picture explained', date: '2009-01-28' },
+      { file: '2009/2009-01-28-computer-vision-vs-computer-graphics.md', title: 'Computer Vision vs Computer Graphics', date: '2009-01-28' },
+      { file: '2009/2009-01-08-stationary-features-google-tech-talk.md', title: 'Stationary Features - Google Tech Talk', date: '2009-01-08' },
+      { file: '2008/2008-09-24-machine-learning-summer-school.md', title: 'Machine Learning Summer School', date: '2008-09-24' },
+      { file: '2008/2008-07-22-icvss-2008.md', title: 'ICVSS 2008', date: '2008-07-22' },
+      { file: '2008/2008-07-07-moved-to-switzerland.md', title: 'Moved to Switzerland', date: '2008-07-07' },
+      { file: '2008/2008-05-31-generating-all-possible-pictures.md', title: 'Generating all possible pictures', date: '2008-05-31' },
+      { file: '2008/2008-05-29-monkey-with-robotic-arm.md', title: 'Monkey with robotic arm', date: '2008-05-29' },
+      { file: '2008/2008-05-13-the-amazing-intelligence-of-crows.md', title: 'The amazing intelligence of crows', date: '2008-05-13' },
+      { file: '2008/2008-05-13-how-ant-colonies-get-things-done.md', title: 'How Ant Colonies Get Things Done', date: '2008-05-13' },
+      { file: '2008/2008-05-09-science-in-summer-time.md', title: 'Science in Summer time', date: '2008-05-09' },
+      { file: '2008/2008-04-14-how-difficult-is-vision.md', title: 'How difficult is Vision?', date: '2008-04-14' },
+      { file: '2008/2008-03-12-videolecturesnet.md', title: 'Videolectures.net', date: '2008-03-12' },
+      { file: '2008/2008-02-22-the-first-conference-on-artificial-general-intelligence-agi-08.md', title: 'The First Conference on Artificial General Intelligence (AGI-08)', date: '2008-02-22' },
+      { file: '2008/2008-02-13-again-on-measuring-machine-intelligence.md', title: 'Again on Measuring Machine Intelligence', date: '2008-02-13' },
+      { file: '2008/2008-02-11-nars-non-axiomatic-reasoning-system.md', title: 'NARS: Non-axiomatic Reasoning System', date: '2008-02-11' },
+      { file: '2008/2008-02-03-brain-science-podcast.md', title: 'Brain Science Podcast', date: '2008-02-03' },
+      { file: '2008/2008-01-30-john-searle-beyond-dualism.md', title: 'John Searle: Beyond Dualism', date: '2008-01-30' },
+      { file: '2008/2008-01-30-on-intelligence-by-jeff-hawkins.md', title: 'On Intelligence by Jeff Hawkins', date: '2008-01-30' },
+      { file: '2008/2008-01-28-measuring-intelligence.md', title: 'Measuring Intelligence', date: '2008-01-28' },
+      { file: '2008/2008-01-15-artificial-general-intelligence.md', title: 'Artificial General Intelligence', date: '2008-01-15' },
+      { file: '2008/2008-01-15-talking-robots.md', title: 'Talking Robots', date: '2008-01-15' },
+      { file: '2008/2008-01-15-welcome-to-about-intelligence.md', title: 'Welcome to "About Intelligence"', date: '2008-01-15' }
+    ];
 
-        let currentYear = null;
+    function loadBlogPosts() {
+      const container = document.getElementById('blog-posts');
+      container.innerHTML = '';
 
-        for (const post of posts) {
-          // Extract year from post date
-          const postYear = post.date.substring(0, 4);
+      let currentYear = null;
 
-          // Add year header if we're starting a new year
-          if (postYear !== currentYear) {
-            const yearHeader = document.createElement('h3');
-            yearHeader.textContent = postYear;
-            yearHeader.style.marginTop = currentYear === null ? '0' : '40px';
-            yearHeader.style.marginBottom = '20px';
-            container.appendChild(yearHeader);
-            currentYear = postYear;
-          }
+      for (const post of posts) {
+        // Extract year from post date
+        const postYear = post.date.substring(0, 4);
 
-          const postDiv = document.createElement('div');
-          postDiv.className = 'blog-post';
-
-          const title = document.createElement('div');
-          title.className = 'blog-post-title';
-          const titleLink = document.createElement('a');
-          // Generate clean URL slug from filename
-          const filename = post.file.split('/')[1]; // Get just the filename without year folder
-          const slug = filename.replace('.md', '');
-          titleLink.href = `post.html#${slug}`;
-          titleLink.textContent = post.title;
-          title.appendChild(titleLink);
-
-          const date = document.createElement('div');
-          date.className = 'blog-post-date';
-          date.textContent = post.date;
-
-          postDiv.appendChild(title);
-          postDiv.appendChild(date);
-
-          container.appendChild(postDiv);
+        // Add year header if we're starting a new year
+        if (postYear !== currentYear) {
+          const yearHeader = document.createElement('h3');
+          yearHeader.textContent = postYear;
+          yearHeader.style.marginTop = currentYear === null ? '0' : '40px';
+          yearHeader.style.marginBottom = '20px';
+          container.appendChild(yearHeader);
+          currentYear = postYear;
         }
+
+        const postDiv = document.createElement('div');
+        postDiv.className = 'blog-post';
+
+        const title = document.createElement('div');
+        title.className = 'blog-post-title';
+        const titleLink = document.createElement('a');
+        // Generate clean URL slug from filename
+        const filename = post.file.split('/')[1]; // Get just the filename without year folder
+        const slug = filename.replace('.md', '');
+        titleLink.href = `post.html#${slug}`;
+        titleLink.textContent = post.title;
+        title.appendChild(titleLink);
+
+        const date = document.createElement('div');
+        date.className = 'blog-post-date';
+        date.textContent = post.date;
+
+        postDiv.appendChild(title);
+        postDiv.appendChild(date);
+
+        container.appendChild(postDiv);
       }
+    }
 
-      loadBlogPosts();
-    </script>
+    loadBlogPosts();
+  </script>
 
-  </body>
+</body>
+
 </html>
