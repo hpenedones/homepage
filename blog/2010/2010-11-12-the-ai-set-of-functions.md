@@ -6,7 +6,7 @@
 
 ---
 
-I recently read an article from Y. Bengio and Y. LeCun named "Scaling Learning Algorithms to AI". You can also find it as a book chapter in "Large-Scale Kernel Machines"L. Bottou, O. Chapelle, D. DeCoste, J. Weston (eds) MIT Press, 2007.  
+I recently read an article from Y. Bengio and Y. LeCun named ["Scaling Learning Algorithms to AI"](http://yann.lecun.com/exdb/publis/pdf/bengio-lecun-07.pdf). You can also find it as a book chapter in "Large-Scale Kernel Machines"L. Bottou, O. Chapelle, D. DeCoste, J. Weston (eds) MIT Press, 2007.  
 
 In some aspects it is an "opinion paper" where the authors advocate for deep learning architectures and their vision of the Machine Learning. However, I think the main message is extremely relevant. I was actually surprised to see how much it agrees with my own opinions.  
 Here is how I would summarize it:  
