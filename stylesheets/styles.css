@@ -410,10 +410,10 @@ footer {
 /* Publication styles */
 
 .publication {
-  margin-bottom: 32px;
-  padding: 16px;
+  margin-bottom: 24px;
+  padding: 12px;
   background-color: #f8f8f8;
-  border-left: 3px solid #C30000;
+  border-left: 3px solid #5A6C7D;
   border-radius: 4px;
 }
 
@@ -421,7 +421,7 @@ footer {
   font-weight: 700;
   font-size: 15px;
   color: #232323;
-  margin-bottom: 8px;
+  margin-bottom: 4px;
   line-height: 1.4;
   display: inline;
 }
@@ -429,7 +429,7 @@ footer {
 .publication-authors {
   color: #555;
   font-size: 13px;
-  margin-bottom: 6px;
+  margin-bottom: 3px;
   line-height: 1.5;
 }
 
@@ -437,11 +437,11 @@ footer {
   font-style: italic;
   color: #666;
   font-size: 13px;
-  margin-bottom: 8px;
+  margin-bottom: 4px;
 }
 
 .publication-links {
-  margin-top: 8px;
+  margin-top: 4px;
 }
 
 .publication-links a {
@@ -452,20 +452,20 @@ footer {
   background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 3px;
-  color: #C30000;
+  color: #5A6C7D;
   text-decoration: none;
 }
 
 .publication-links a:hover {
-  background-color: #C30000;
+  background-color: #5A6C7D;
   color: #fff;
   text-decoration: none;
-  border-color: #C30000;
+  border-color: #5A6C7D;
 }
 
 .publication-label {
   display: inline-block;
-  background-color: #C30000;
+  background-color: #5A6C7D;
   color: #fff;
   padding: 2px 8px;
   border-radius: 3px;
@@ -473,17 +473,17 @@ footer {
   font-weight: 700;
   text-transform: uppercase;
   margin-right: 8px;
-  margin-bottom: 8px;
+  margin-bottom: 0px;
   vertical-align: top;
 }
 
 /* Talk styles */
 
 .talk {
-  margin-bottom: 32px;
-  padding: 16px;
+  margin-bottom: 24px;
+  padding: 12px;
   background-color: #f8f8f8;
-  border-left: 3px solid #C30000;
+  border-left: 3px solid #5A6C7D;
   border-radius: 4px;
 }
 
@@ -491,7 +491,7 @@ footer {
   font-weight: 700;
   font-size: 15px;
   color: #232323;
-  margin-bottom: 8px;
+  margin-bottom: 4px;
   line-height: 1.4;
   display: inline;
 }
@@ -500,11 +500,11 @@ footer {
   font-style: italic;
   color: #666;
   font-size: 13px;
-  margin-bottom: 8px;
+  margin-bottom: 4px;
 }
 
 .talk-links {
-  margin-top: 8px;
+  margin-top: 4px;
 }
 
 .talk-links a {
@@ -515,20 +515,20 @@ footer {
   background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 3px;
-  color: #C30000;
+  color: #5A6C7D;
   text-decoration: none;
 }
 
 .talk-links a:hover {
-  background-color: #C30000;
+  background-color: #5A6C7D;
   color: #fff;
   text-decoration: none;
-  border-color: #C30000;
+  border-color: #5A6C7D;
 }
 
 .talk-label {
   display: inline-block;
-  background-color: #C30000;
+  background-color: #5A6C7D;
   color: #fff;
   padding: 2px 8px;
   border-radius: 3px;
@@ -536,17 +536,17 @@ footer {
   font-weight: 700;
   text-transform: uppercase;
   margin-right: 8px;
-  margin-bottom: 8px;
+  margin-bottom: 0px;
   vertical-align: top;
 }
 
 /* Code project styles */
 
 .code-project {
-  margin-bottom: 32px;
-  padding: 16px;
+  margin-bottom: 24px;
+  padding: 12px;
   background-color: #f8f8f8;
-  border-left: 3px solid #C30000;
+  border-left: 3px solid #5A6C7D;
   border-radius: 4px;
 }
 
@@ -554,7 +554,7 @@ footer {
   font-weight: 700;
   font-size: 15px;
   color: #232323;
-  margin-bottom: 8px;
+  margin-bottom: 4px;
   line-height: 1.4;
   display: inline;
 }
@@ -562,12 +562,12 @@ footer {
 .code-project-description {
   color: #555;
   font-size: 13px;
-  margin-bottom: 8px;
+  margin-bottom: 4px;
   line-height: 1.5;
 }
 
 .code-project-links {
-  margin-top: 8px;
+  margin-top: 4px;
 }
 
 .code-project-links a {
@@ -578,20 +578,20 @@ footer {
   background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 3px;
-  color: #C30000;
+  color: #5A6C7D;
   text-decoration: none;
 }
 
 .code-project-links a:hover {
-  background-color: #C30000;
+  background-color: #5A6C7D;
   color: #fff;
   text-decoration: none;
-  border-color: #C30000;
+  border-color: #5A6C7D;
 }
 
 .code-project-label {
   display: inline-block;
-  background-color: #C30000;
+  background-color: #5A6C7D;
   color: #fff;
   padding: 2px 8px;
   border-radius: 3px;
@@ -599,7 +599,7 @@ footer {
   font-weight: 700;
   text-transform: uppercase;
   margin-right: 8px;
-  margin-bottom: 8px;
+  margin-bottom: 0px;
   vertical-align: top;
 }
 
