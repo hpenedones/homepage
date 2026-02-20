@@ -50,63 +50,22 @@
         }
       });
 
-      // Posts configuration - maps slugs to markdown file paths
-      const posts = {
-        '2025-11-07-the-future-of-ai-is-physical-simulation-is-key': '2025/2025-11-07-the-future-of-ai-is-physical-simulation-is-key.md',
-        '2023-05-30-programming-at-inductiva': '2023/2023-05-30-programming-at-inductiva.md',
-        '2012-11-20-machine-learning-workshop-idiap-epfl-2012': '2012/2012-11-20-machine-learning-workshop-idiap-epfl-2012.md',
-        '2012-11-12-active-appearance-models': '2012/2012-11-12-active-appearance-models.md',
-        '2010-11-12-the-ai-set-of-functions': '2010/2010-11-12-the-ai-set-of-functions.md',
-        '2010-11-08-tutorial-handwritten-digit-recognition-with-convolutional-neural-networks': '2010/2010-11-08-tutorial-handwritten-digit-recognition-with-convolutional-neural-networks.md',
-        '2010-10-23-nyc-machine-learning-symposium-2010': '2010/2010-10-23-nyc-machine-learning-symposium-2010.md',
-        '2010-07-06-machine-learning-recent-sites': '2010/2010-07-06-machine-learning-recent-sites.md',
-        '2009-12-08-optimism-as-artificial-intelligence-pioneers-reunite': '2009/2009-12-08-optimism-as-artificial-intelligence-pioneers-reunite.md',
-        '2009-12-07-tedx-geneva': '2009/2009-12-07-tedx-geneva.md',
-        '2009-11-11-choosing-my-tools': '2009/2009-11-11-choosing-my-tools.md',
-        '2009-11-01-open-phd-and-postdoc-positions': '2009/2009-11-01-open-phd-and-postdoc-positions.md',
-        '2009-10-14-gmail-machine-learning': '2009/2009-10-14-gmail-machine-learning.md',
-        '2009-10-05-schools-kill-creativity': '2009/2009-10-05-schools-kill-creativity.md',
-        '2009-08-02-my-ideal-society': '2009/2009-08-02-my-ideal-society.md',
-        '2009-07-22-personal-productivity-happiness-and-optimization-algorithms': '2009/2009-07-22-personal-productivity-happiness-and-optimization-algorithms.md',
-        '2009-07-22-increasing-the-scope': '2009/2009-07-22-increasing-the-scope.md',
-        '2009-05-06-machine-learning-to-ai': '2009/2009-05-06-machine-learning-to-ai.md',
-        '2009-04-01-google-cadie-vs-wolfram-alpha': '2009/2009-04-01-google-cadie-vs-wolfram-alpha.md',
-        '2009-03-28-machine-learning-artwork': '2009/2009-03-28-machine-learning-artwork.md',
-        '2009-03-18-acm-paris-kanellakis-theory-and-practice-award-2008': '2009/2009-03-18-acm-paris-kanellakis-theory-and-practice-award-2008.md',
-        '2009-02-06-social-features-on-this-blog': '2009/2009-02-06-social-features-on-this-blog.md',
-        '2009-01-28-vapniks-picture-explained': '2009/2009-01-28-vapniks-picture-explained.md',
-        '2009-01-28-computer-vision-vs-computer-graphics': '2009/2009-01-28-computer-vision-vs-computer-graphics.md',
-        '2009-01-08-stationary-features-google-tech-talk': '2009/2009-01-08-stationary-features-google-tech-talk.md',
-        '2008-09-24-machine-learning-summer-school': '2008/2008-09-24-machine-learning-summer-school.md',
-        '2008-07-22-icvss-2008': '2008/2008-07-22-icvss-2008.md',
-        '2008-07-07-moved-to-switzerland': '2008/2008-07-07-moved-to-switzerland.md',
-        '2008-05-31-generating-all-possible-pictures': '2008/2008-05-31-generating-all-possible-pictures.md',
-        '2008-05-29-monkey-with-robotic-arm': '2008/2008-05-29-monkey-with-robotic-arm.md',
-        '2008-05-13-the-amazing-intelligence-of-crows': '2008/2008-05-13-the-amazing-intelligence-of-crows.md',
-        '2008-05-13-how-ant-colonies-get-things-done': '2008/2008-05-13-how-ant-colonies-get-things-done.md',
-        '2008-05-09-science-in-summer-time': '2008/2008-05-09-science-in-summer-time.md',
-        '2008-04-14-how-difficult-is-vision': '2008/2008-04-14-how-difficult-is-vision.md',
-        '2008-03-12-videolecturesnet': '2008/2008-03-12-videolecturesnet.md',
-        '2008-02-22-the-first-conference-on-artificial-general-intelligence-agi-08': '2008/2008-02-22-the-first-conference-on-artificial-general-intelligence-agi-08.md',
-        '2008-02-13-again-on-measuring-machine-intelligence': '2008/2008-02-13-again-on-measuring-machine-intelligence.md',
-        '2008-02-11-nars-non-axiomatic-reasoning-system': '2008/2008-02-11-nars-non-axiomatic-reasoning-system.md',
-        '2008-02-03-brain-science-podcast': '2008/2008-02-03-brain-science-podcast.md',
-        '2008-01-30-john-searle-beyond-dualism': '2008/2008-01-30-john-searle-beyond-dualism.md',
-        '2008-01-30-on-intelligence-by-jeff-hawkins': '2008/2008-01-30-on-intelligence-by-jeff-hawkins.md',
-        '2008-01-28-measuring-intelligence': '2008/2008-01-28-measuring-intelligence.md',
-        '2008-01-15-artificial-general-intelligence': '2008/2008-01-15-artificial-general-intelligence.md',
-        '2008-01-15-talking-robots': '2008/2008-01-15-talking-robots.md',
-        '2008-01-15-welcome-to-about-intelligence': '2008/2008-01-15-welcome-to-about-intelligence.md'
-      };
+      // Convert slug to markdown file path
+      // Slug format: YYYY-MM-DD-title
+      // File path: YYYY/YYYY-MM-DD-title.md
+      function slugToFilePath(slug) {
+        const year = slug.substring(0, 4);
+        return `${year}/${slug}.md`;
+      }
 
       async function loadPost() {
         // Try to get the slug from the URL hash first (new format: #2023-05-30-programming-at-inductiva)
         let slug = window.location.hash.substring(1); // Remove the # character
         let file = null;
 
-        if (slug && posts[slug]) {
+        if (slug) {
           // New hash-based format
-          file = posts[slug];
+          file = slugToFilePath(slug);
         } else {
           // Fall back to old query parameter format for backward compatibility
           const params = new URLSearchParams(window.location.search);
