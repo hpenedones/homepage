@@ -497,35 +497,20 @@ footer {
   display: inline;
 }
 
+.talk-title a {
+  color: #C30000;
+  text-decoration: none;
+}
+
+.talk-title a:hover {
+  text-decoration: underline;
+}
+
 .talk-venue {
   font-style: italic;
   color: #666;
   font-size: 13px;
   margin-bottom: 4px;
-}
-
-.talk-links {
-  display: inline;
-  margin-left: 8px;
-}
-
-.talk-links a {
-  display: inline-block;
-  margin-right: 8px;
-  font-size: 12px;
-  padding: 2px 8px;
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 3px;
-  color: #5A6C7D;
-  text-decoration: none;
-}
-
-.talk-links a:hover {
-  background-color: #5A6C7D;
-  color: #fff;
-  text-decoration: none;
-  border-color: #5A6C7D;
 }
 
 .talk-label {
@@ -540,6 +525,21 @@ footer {
   margin-right: 8px;
   margin-bottom: 0px;
   vertical-align: top;
+}
+
+.secondary-link {
+  font-size: 13px;
+  font-weight: 400;
+  color: #666;
+}
+
+.secondary-link a {
+  color: #5A6C7D;
+  text-decoration: none;
+}
+
+.secondary-link a:hover {
+  text-decoration: underline;
 }
 
 /* Code project styles */
@@ -568,30 +568,6 @@ footer {
   line-height: 1.5;
 }
 
-.code-project-links {
-  display: inline;
-  margin-left: 8px;
-}
-
-.code-project-links a {
-  display: inline-block;
-  margin-right: 8px;
-  font-size: 12px;
-  padding: 2px 8px;
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 3px;
-  color: #5A6C7D;
-  text-decoration: none;
-}
-
-.code-project-links a:hover {
-  background-color: #5A6C7D;
-  color: #fff;
-  text-decoration: none;
-  border-color: #5A6C7D;
-}
-
 .code-project-label {
   display: inline-block;
   background-color: #5A6C7D;
@@ -604,6 +580,27 @@ footer {
   margin-right: 8px;
   margin-bottom: 0px;
   vertical-align: top;
+}
+
+.github-icon {
+  display: inline-block;
+  margin-left: 6px;
+  vertical-align: middle;
+  line-height: 0;
+}
+
+.github-icon img {
+  width: 16px;
+  height: 16px;
+  border: none;
+  padding: 0;
+  margin: 0;
+  vertical-align: middle;
+  opacity: 0.7;
+}
+
+.github-icon:hover img {
+  opacity: 1;
 }
 
 /* Blog post styles */
