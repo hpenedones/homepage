@@ -43,9 +43,9 @@ Remember what the legendary computer scientist [Donald Knuth](https://en.wikiped
 
 Here are a couple of aspects you should prioritize to make your code more readable:
 
-- **Small functions** – do not write long functions or methods with a lot of unrelated logic in one single place. If you find yourself dividing sections of your code with lines of comments like "# read input data", then "# pre-process data", etc. this is a strong indication that you should have smaller separate functions for those subtasks. This way your code is easier to understand, and those functions can be reused in other places. They can also now be properly unit tested!
+- **Small functions** - do not write long functions or methods with a lot of unrelated logic in one single place. If you find yourself dividing sections of your code with lines of comments like "# read input data", then "# pre-process data", etc. this is a strong indication that you should have smaller separate functions for those subtasks. This way your code is easier to understand, and those functions can be reused in other places. They can also now be properly unit tested!
 
-- **Meaningful names** – the choice of names for variables, methods, functions, classes, modules and packages, is very important. A variable called "p" can be anything, but if you call it "protein" or "particle", you are helping the reader understand your program by using terms that are both familiar and specific.
+- **Meaningful names** - the choice of names for variables, methods, functions, classes, modules and packages, is very important. A variable called "p" can be anything, but if you call it "protein" or "particle", you are helping the reader understand your program by using terms that are both familiar and specific.
 
 ## Simplicity
 
@@ -53,7 +53,7 @@ Below is an often-shared cartoon illustrating in a funny way how code complexity
 
 The last stage is one in which the programmer becomes able to solve complex problems, while writing simple and elegant solutions.
 
-![Code complexity as a function of programmer's experience](https://inductiva.ai/wp-images/code_complexity-300x231.png)
+![Code complexity as a function of programmer's experience](../../images/code_complexity.png)
 
 **Figure 1** – Code complexity as a function of programmer's experience [original source: unknown]
 
