@@ -2,6 +2,10 @@ name: Check for Broken Links
 
 on:
 
+  # Run automatically once a week (every Monday at 08:00 UTC)
+  schedule:
+    - cron: '0 8 * * 1'
+
   # Allow manual trigger
   workflow_dispatch:
 
