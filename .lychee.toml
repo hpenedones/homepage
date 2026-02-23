@@ -37,6 +37,19 @@ exclude = [
   "facebook.com",
   "twitter.com",
   "x.com",
+
+  # Academic/publisher sites that block bots but are alive
+  "scholar.google.com",
+  "onlinelibrary.wiley.com",
+  "awards.acm.org",
+
+  # News sites that block bots but are alive
+  "nytimes.com",
+
+  # Technical sites that block bots or have slow responses
+  "doxygen.org",
+  "gnu.org",
+  "idsia.ch",
 ]
 
 # File patterns are specified in the workflow args instead of here

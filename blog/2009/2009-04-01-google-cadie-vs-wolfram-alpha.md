@@ -8,7 +8,7 @@
 
 [Google already has a tradition of April fool's jokes](http://en.wikipedia.org/wiki/Google%27s_hoaxes): this year they are introducing an Artificial Intelligence brain!  
 
-They describe the development process of their so called [CADIE : Cognitive Autoheuristic Distributed-Intelligence Entity](http://books.google.com/intl/en_us/landing/cadie/) like this:  
+They describe the development process of their so called [CADIE : Cognitive Autoheuristic Distributed-Intelligence Entity](https://web.archive.org/web/http://books.google.com/intl/en_us/landing/cadie/) like this:  
 
 "For several years now a small research group has been working on some challenging problems in the areas of neural networking, natural language and autonomous problem-solving. Last fall this group achieved a significant breakthrough: a powerful new technique for solving reinforcement learning problems, resulting in the first functional global-scale neuro-evolutionary learning cluster."  
 
