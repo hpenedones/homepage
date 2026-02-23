@@ -710,6 +710,9 @@ screen and (max-width: 480px) {
 /* Blog post styles */
 
 .blog-post {
+  display: block;
+  text-decoration: none;
+  color: inherit;
   margin-bottom: 12px;
   padding: 10px 15px;
   background-color: #fdfdfd;
@@ -720,26 +723,23 @@ screen and (max-width: 480px) {
   transition: all 0.2s ease;
 }
 
-.blog-post:hover {
+.blog-post:hover,
+.blog-post:focus {
   background-color: #fff;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
   transform: translateX(4px);
 }
 
 .blog-post-title {
-  font-weight: 600;
+  font-weight: 700;
   font-size: 15px;
   color: #232323;
   line-height: 1.4;
   display: block;
 }
 
-.blog-post-title a {
-  color: #232323;
-  text-decoration: none;
-}
-
-.blog-post-title a:hover {
+.blog-post:hover .blog-post-title,
+.blog-post:focus .blog-post-title {
   color: #AF0011;
 }
 
