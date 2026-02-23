@@ -6,7 +6,7 @@
 
 ---
 
-In this 10min [TED](http://www.ted.com/) talk, [Joshua Klein](http://www.wireless.is/projects/crows/) talks about crows and how they are incredibly good learners.
+In this 10min [TED](http://www.ted.com/) talk, Joshua Klein talks about crows and how they are incredibly good learners.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/8mm1H5DYdlk" frameborder="0" allowfullscreen></iframe>
 

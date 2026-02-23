@@ -6,7 +6,7 @@
 
 ---
 
-Today I tried out a great site to generate tag clouds, it is called [wordle.net](http://www.wordle.net/). I rendered some images just by copy-pasting the text from [wikipedia about machine learning](http://en.wikipedia.org/wiki/Machine_learning).  
+Today I tried out a great site to generate tag clouds, it is called wordle.net. I rendered some images just by copy-pasting the text from [wikipedia about machine learning](http://en.wikipedia.org/wiki/Machine_learning).  
 
 The results were pretty cool and I guess one could print awesome t-shirts with them. What do you say?  
 

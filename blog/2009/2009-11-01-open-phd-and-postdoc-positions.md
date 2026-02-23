@@ -6,6 +6,6 @@
 
 ---
 
-My [supervisor](http://www.idiap.ch/%7Efleuret/) is leading a new European project called [MASH](http://mash-project.eu/), which stands for "Massive Sets of Heuristics". There are open positions here in Switzerland, as well as in France, Germany and Czech Republic.  
+My [supervisor](https://fleuret.org/francois/) is leading a new European project called MASH, which stands for "Massive Sets of Heuristics". There are open positions here in Switzerland, as well as in France, Germany and Czech Republic.  
 The goal is to solve complex vision and goal planning problems in a collaborative way. It will be tested in 3D video games and also in a real robotic arm. Collaborators will submit pieces of code (heuristics) that can help the machine solving the problem at hand. In the background, machine learning algorithms will be running to choose the best heuristics.  
 If you are interested in: probabilities, applied statistics, information theory, signal processing, optimization, algorithms and C++ programming, you might consider applying!
