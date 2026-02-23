@@ -10,7 +10,7 @@ I'm doing research in the fields of Machine Learning and Computer Vision, so eac
 
 **Operating system:**
 
-[Snow Leopard](https://web.archive.org/web/http://www.apple.com/macosx/) - In my opinion, Mac OS X has an excellent balance between control and usability. You have beautiful graphical interfaces, that just work, but still have a fully functional Unix shell.
+[Snow Leopard](https://en.wikipedia.org/wiki/Mac_OS_X_Snow_Leopard) - In my opinion, Mac OS X has an excellent balance between control and usability. You have beautiful graphical interfaces, that just work, but still have a fully functional Unix shell.
 
 **Update:** Lately my preference is to use [Ubuntu Linux](http://www.ubuntu.com/) because I have much fewer problems with apt-get than with macports. Sometimes, professionally I also use Windows. It seems that is hard to stick to one OS, when you change project, job, etc.
 
@@ -46,7 +46,7 @@ I'm doing research in the fields of Machine Learning and Computer Vision, so eac
 
 **Computer Vision Library:**
 
-[OpenCV](https://web.archive.org/web/http://opencv.willowgarage.com/wiki/) - it's quite useful for the low and intermediate level things (load and save images, convert color spaces, edge detection, SURF descriptors etc.). It also has higher level algorithms, but when you're doing research in the field, these are not so useful. It lacks some object-oriented design, but version 2.0 is starting to move in that direction.
+[OpenCV](https://opencv.org/) - it's quite useful for the low and intermediate level things (load and save images, convert color spaces, edge detection, SURF descriptors etc.). It also has higher level algorithms, but when you're doing research in the field, these are not so useful. It lacks some object-oriented design, but version 2.0 is starting to move in that direction.
 
 **Machine Learning library:**
 
@@ -58,7 +58,7 @@ None. Here I'm re-inventing the wheel, because I want to know everything about w
 
 **Debugging:**
 
-[gdb](http://www.gnu.org/software/gdb/) - pretty much of a standard. I haven't yet chosen an interface for it... Maybe I don't even need one. I find [ddd](http://www.gnu.org/software/ddd/) look and feel really horrible! Maybe I will start using [xcode](https://web.archive.org/web/http://developer.apple.com/TOOLS/Xcode) interface to gdb for debugging. Not sure. Actually, 90% of the times I will identify the bug by making some prints and looking at the code, so I don't even run gdb.
+[gdb](http://www.gnu.org/software/gdb/) - pretty much of a standard. I haven't yet chosen an interface for it... Maybe I don't even need one. I find [ddd](http://www.gnu.org/software/ddd/) look and feel really horrible! Maybe I will start using [xcode](https://developer.apple.com/xcode/) interface to gdb for debugging. Not sure. Actually, 90% of the times I will identify the bug by making some prints and looking at the code, so I don't even run gdb.
 
 **Static code analysis:**
 
@@ -90,7 +90,7 @@ Here I should be using [mplayer / mencoder](http://www.mplayerhq.hu/DOCS/man/en/
 
 **Automated backups:**
 
-[Time Machine](https://web.archive.org/web/http://www.apple.com/macosx/what-is-macosx/time-machine.html) - I have an external hardisk which backs up pretty much everything automatically when I connect it to my macbook. Things in my desktop are backed up by a central procedure implemented in [my research institute](http://www.idiap.ch/).
+[Time Machine](https://en.wikipedia.org/wiki/Time_Machine_(macOS)) - I have an external hardisk which backs up pretty much everything automatically when I connect it to my macbook. Things in my desktop are backed up by a central procedure implemented in [my research institute](http://www.idiap.ch/).
 
 **Update:** I still use Time Machine in one computer, but now I rely more on cloud storage. I use Google Drive for some documents, PicasaWeb for pictures and use either Github or Bitbucket for source code or latex papers.
 

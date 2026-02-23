@@ -10,7 +10,7 @@
 
 This is an extremely geek picture! :) Let's try to explain it:  
 
-First of all, as many of you know, the gentleman in the picture is [Prof. Vladimir Vapnik](https://web.archive.org/web/http://www.ccls.columbia.edu/Vapnik-Bio.html). He is famous for his fundamental contributions to the field of Statistical Learning Theory, such as the Empirical Risk Minimization (ERM) principle, VC-dimension and Support Vector Machines.  
+First of all, as many of you know, the gentleman in the picture is [Prof. Vladimir Vapnik](https://en.wikipedia.org/wiki/Vladimir_Vapnik). He is famous for his fundamental contributions to the field of Statistical Learning Theory, such as the Empirical Risk Minimization (ERM) principle, VC-dimension and Support Vector Machines.  
 
 Then we notice the sentence in the board: it resembles the famous "[All your base are belong to us](http://en.wikipedia.org/wiki/All_your_base_are_belong_to_us)"! This is a piece of geek culture that emerged after a "broken English" translation of a Japanese video game for Sega Mega Drive .  
 
