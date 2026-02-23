@@ -50,7 +50,7 @@ I'm doing research in the fields of Machine Learning and Computer Vision, so eac
 
 **Machine Learning library:**
 
-None. Here I'm re-inventing the wheel, because I want to know everything about wheels. I do my own implementations of AdaBoost, EM algorithm, Kmeans and stuff like that.
+None. Here I'm re-inventing the wheel, because I want to know everything about wheels. I do my own implementations of AdaBoost, EM algorithm, Kmeans and stuff like that. See my C++ code at: https://github.com/hpenedones/lakeml
 
 **Object Serialization Library:**
 
