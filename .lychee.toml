@@ -42,6 +42,7 @@ exclude = [
   "scholar.google.com",
   "onlinelibrary.wiley.com",
   "awards.acm.org",
+  "dl.acm.org",
 
   # News sites that block bots but are alive
   "nytimes.com",

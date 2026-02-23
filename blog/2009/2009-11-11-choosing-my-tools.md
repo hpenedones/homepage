@@ -32,7 +32,7 @@ I'm doing research in the fields of Machine Learning and Computer Vision, so eac
 
 **Source control system:**
 
-[git](http://git-scm.com/) - I was using [subversion](http://subversion.tigris.org/) before, but I guess the idea of distributed repositories makes sense. You can work locally and still commit changes that you can synchronize later. So far, I use less than 2% of the commands!
+[git](http://git-scm.com/) - I was using [subversion](https://en.wikipedia.org/wiki/Apache_Subversion) before, but I guess the idea of distributed repositories makes sense. You can work locally and still commit changes that you can synchronize later. So far, I use less than 2% of the commands!
 
 **Update:** git is definitely here to stay. Now I use private and public hosted repositories with Github or Bitbucket.
 
@@ -50,7 +50,7 @@ I'm doing research in the fields of Machine Learning and Computer Vision, so eac
 
 **Machine Learning library:**
 
-None. Here I'm re-inventing the wheel, because I want to know everything about wheels. I do my own implementations of AdaBoost, EM algorithm, Kmeans and stuff like that. For a nice discussion of code re-use in the machine learning domain, read this [discussion at mloss.org](http://mloss.org/community/blog/2009/oct/14/re-implement-or-reuse/)
+None. Here I'm re-inventing the wheel, because I want to know everything about wheels. I do my own implementations of AdaBoost, EM algorithm, Kmeans and stuff like that.
 
 **Object Serialization Library:**
 
