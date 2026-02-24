@@ -8,7 +8,7 @@ Yesterday I attended a [talk organized by the London Machine Learning meetup gro
 
 ![deep_learning_theory](../../images/deep_learning_theory.jpg)
 
-Yoshua reinforced the idea that a lot of the success of learning algorithms for AI tasks comes from incorporating meaningful priors. These should be general enough to hold true in a wide range of applications, but also specific enough to vastly reduce the amount of training data needed to achieve good generalization. This reminded me of a [previous post](http://blog.hpenedones.org/?p=6 "The AI set of functions") I wrote in this blog, almost 5 years ago!
+Yoshua reinforced the idea that a lot of the success of learning algorithms for AI tasks comes from incorporating meaningful priors. These should be general enough to hold true in a wide range of applications, but also specific enough to vastly reduce the amount of training data needed to achieve good generalization. This reminded me of a previous post I wrote in this blog, almost 5 years ago!
 
 In the meanwhile, deep learning became main-stream, and Yoshua's slides highlighted several theoretical progresses that were made, e.g:
 
