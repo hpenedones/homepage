@@ -11,3 +11,5 @@ and how [Inductiva.AI](https://inductiva.ai) is contributing with a platform tha
 simulation and physics datasets generation really easy and affordable.
 
 At [Nova School of Business and Economics](https://www.novasbe.unl.pt/).
+
+![Ciência 2025 roundtable at Nova SBE, July 2025](../images/ciencia_2025_roundtable.jpg)
