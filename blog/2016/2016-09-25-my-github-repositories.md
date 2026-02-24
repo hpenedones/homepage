@@ -12,6 +12,5 @@ I recently made public more of my programming projects from the past. My github 
 - [partitracker](https://github.com/hpenedones/partitracker) - a simple Particle Filter implemented in C++ and OpenCV.
 - [sudoku](https://github.com/hpenedones/sudoku) - a Sudoku puzzle solver in pure C.
 - [kdtree](https://github.com/hpenedones/kdtree) - a K-d tree C++ implementation, for Nearest Neighbours search.
-- [likewise](https://github.com/hpenedones/likewise) - a simple Python webserver for image similarity search, using the embeddings from a pre-trained convnet.
 - [fractals](https://github.com/hpenedones/fractals) - Zoomable Mandelbrot fractal renderings using PyGame.
 - [acm_utils](https://github.com/hpenedones/acm_utils) - Data structures and algorithms useful for programming competitions (trie, balanced tree, big ints, suffix arrays, etc.) and other small C or C++ pearls.
