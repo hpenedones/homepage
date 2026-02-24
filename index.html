@@ -7,9 +7,11 @@
   <title>Hugo Penedones Homepage</title>
 
   <link rel="stylesheet" href="stylesheets/styles.css">
+  <link rel="icon" href="/favicon.ico">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400&display=swap" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400&display=swap"></noscript>
   <script defer src="javascripts/scale.fix.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Hugo Penedones — Machine Learning engineer and researcher. Co-founder of inductiva.ai, early AlphaFold team member at Google DeepMind. Talks, publications, blog and open-source projects.">
@@ -23,10 +25,10 @@
     <header>
       <h1 class="header">Hugo Penedones</h1>
 
-      <img src="images/hugo.jpg" width="120" height="120" alt="Hugo Penedones" />
+      <img src="images/hugo.jpg" width="120" height="120" alt="Hugo Penedones" fetchpriority="high" />
       <p>Welcome to my homepage</p>
     </header>
-    <section>
+    <section role="main">
       <h2>About me</h2>
 
       <p>
@@ -300,7 +302,10 @@ AI4Science: AI-empowered Scientific Exploration</a></div>
 
       <div class="book-section">
         <div class="book-cover">
-          <img src="images/book-cover.png" alt="Book cover">
+          <picture>
+            <source srcset="images/book-cover.webp" type="image/webp">
+            <img src="images/book-cover.png" alt="Cover of 'A Nossa Vez', a book by Hugo Penedones" width="200" height="290" loading="lazy">
+          </picture>
         </div>
         <div class="book-info">
           <p>
