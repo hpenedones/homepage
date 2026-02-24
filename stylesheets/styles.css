@@ -743,7 +743,7 @@ screen and (max-width: 480px) {
 }
 
 .blog-post-date {
-  color: #888;
+  color: #6e6e6e;
   font-size: 12px;
   margin-top: 4px;
   font-family: Arvo, serif;
@@ -846,7 +846,7 @@ screen and (max-width: 480px) {
 .quote-author {
   display: block;
   font-size: 13px;
-  color: #777;
+  color: #6e6e6e;
   text-align: right;
   font-weight: 500;
   text-transform: uppercase;
