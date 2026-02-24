@@ -750,6 +750,27 @@ screen and (max-width: 480px) {
   font-family: Arvo, serif;
 }
 
+.all-blog-posts-btn {
+  display: inline-block;
+  margin-top: 8px;
+  margin-bottom: 24px;
+  padding: 8px 18px;
+  background-color: #AF0011;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+.all-blog-posts-btn:hover,
+.all-blog-posts-btn:focus {
+  background-color: #8a000d;
+  text-decoration: none;
+  color: #fff;
+}
+
 @media print {
   body {
     padding: 0.4in;
