@@ -2,8 +2,6 @@
 
 **Date:** September 25, 2016
 
-**Original URL:** http://blog.hpenedones.org/?p=579
-
 ---
 
 I recently made public more of my programming projects from the past. My github profile now includes:

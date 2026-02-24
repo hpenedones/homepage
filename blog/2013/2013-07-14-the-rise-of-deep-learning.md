@@ -2,8 +2,6 @@
 
 **Date:** July 14, 2013
 
-**Original URL:** http://blog.hpenedones.org/?p=534
-
 ---
 
 A couple of years ago, I was doing research involving Convolutional Neural Networks for object classification tasks (see [here](http://hpenedones.org/publications/Penedones_Idiap-RR-30-2012.pdf)). At that point, deep learning was an (re)emergent field, but it hadn't achieved mainstream yet.

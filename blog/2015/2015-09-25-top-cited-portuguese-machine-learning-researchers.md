@@ -2,8 +2,6 @@
 
 **Date:** September 25, 2015
 
-**Original URL:** http://blog.hpenedones.org/?p=575
-
 ---
 
 It turns out that there are several very high profile Portuguese researchers in the field of Machine Learning, even though they all seem to live and work abroad. Here are, to the best of my knowledge, the most cited ones, including their current affiliation and the total citations according to Google Scholar (as of Sept. 2015):

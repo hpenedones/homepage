@@ -2,8 +2,6 @@
 
 **Date:** April 16, 2015
 
-**Original URL:** http://blog.hpenedones.org/?p=565
-
 ---
 
 Yesterday I attended a [talk organized by the London Machine Learning meetup group, where Yoshua Bengio was the invited speaker](http://www.meetup.com/London-Machine-Learning-Meetup/events/221601571/). Not surprisingly, there were about 200 people attending.

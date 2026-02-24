@@ -2,8 +2,6 @@
 
 **Date:** August 29, 2013
 
-**Original URL:** http://blog.hpenedones.org/?p=541
-
 ---
 
 **Nassim Nicholas Taleb** (author, scholar, statistician, trader, philosopher, risk manager)

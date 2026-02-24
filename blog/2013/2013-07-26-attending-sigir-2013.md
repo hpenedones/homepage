@@ -2,8 +2,6 @@
 
 **Date:** July 26, 2013
 
-**Original URL:** http://blog.hpenedones.org/?p=548
-
 ---
 
 Soon I will be in Dublin, Ireland, attending one of the best conferences in Information Retrieval. Looking forward to hearing about the latest research and probably meeting some old friends.

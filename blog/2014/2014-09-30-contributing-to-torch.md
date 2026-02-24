@@ -2,8 +2,6 @@
 
 **Date:** September 30, 2014
 
-**Original URL:** http://blog.hpenedones.org/?p=559
-
 ---
 
 I recently started playing with the torch library again. Torch7 is now a growing set of packages, managed by luarocks. I really like this approach because it forces torch contributors to make their code more modular and re-usable.
