@@ -1,0 +1,29 @@
+name: Lighthouse
+
+on:
+
+  # Run automatically once a week (every Monday at 08:00 UTC)
+  schedule:
+    - cron: '0 8 * * 1'
+
+  # Allow manual trigger
+  workflow_dispatch:
+
+
+jobs:
+  lighthouse:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Run Lighthouse
+        uses: treosh/lighthouse-ci-action@v12
+        with:
+          urls: |
+            https://hpenedones.me
+          uploadArtifacts: true
+          temporaryPublicStorage: true
