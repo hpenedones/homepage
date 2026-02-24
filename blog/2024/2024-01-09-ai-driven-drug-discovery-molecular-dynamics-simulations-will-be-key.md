@@ -8,6 +8,8 @@
 
 Prediction: training data from molecular dynamics simulations will be key.
 
+*This is a reaction to the VentureBeat article ["AI-driven drug discovery is poised to boom in 2024"](https://venturebeat.com/ai/ai-driven-drug-discovery-is-poised-to-boom-in-2024-the-ai-beat).*
+
 Background story: I was part of the initial AlphaFold team at DeepMind, back in early 2016. We knew
 that ideally we would train a deep neural network end-to-end on a large dataset of mappings
 (amino-acid sequence -> 3d structure), however the data in the Protein Data Bank was not enough to do
