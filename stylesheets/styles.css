@@ -581,6 +581,7 @@ screen and (max-width: 480px) {
   background-color: #f8f8f8;
   border-left: 3px solid #5A6C7D;
   border-radius: 4px;
+  position: relative;
 }
 
 .talk-title {
@@ -636,6 +637,42 @@ screen and (max-width: 480px) {
 
 .secondary-link a:hover {
   text-decoration: underline;
+}
+
+.talk-toggle {
+  float: right;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: #5A6C7D;
+  padding: 0 0 0 8px;
+  line-height: 1;
+  transition: transform 0.2s ease;
+}
+
+.talk-toggle:hover {
+  color: #232323;
+}
+
+.talk-toggle.expanded {
+  transform: rotate(180deg);
+}
+
+.talk-video {
+  display: none;
+  margin-top: 12px;
+}
+
+.talk-video.expanded {
+  display: block;
+}
+
+.talk-video iframe {
+  width: 100%;
+  max-width: 560px;
+  height: 315px;
+  border: 0;
 }
 
 /* Code project styles */
