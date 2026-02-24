@@ -424,26 +424,39 @@ AI4Science: AI-empowered Scientific Exploration</a></div>
   <!--[if !IE]><script>fixScale(document);</script><![endif]-->
 
   <script>
-    document.querySelectorAll('.talk-toggle').forEach(function(btn) {
+    document.querySelectorAll('.talk-toggle').forEach(function(btn, index) {
+      var talk = btn.closest('.talk');
+      if (!talk) {
+        return;
+      }
+      var videoDiv = talk.querySelector('.talk-video');
+      if (videoDiv) {
+        if (!videoDiv.id) {
+          videoDiv.id = 'talk-video-' + index;
+        }
+        btn.setAttribute('aria-controls', videoDiv.id);
+      }
       btn.addEventListener('click', function() {
-        var talk = btn.closest('.talk');
-        var videoDiv = talk.querySelector('.talk-video');
         var expanded = btn.getAttribute('aria-expanded') === 'true';
         if (expanded) {
           btn.setAttribute('aria-expanded', 'false');
           btn.classList.remove('expanded');
-          videoDiv.classList.remove('expanded');
-        } else {
-          if (!videoDiv.querySelector('iframe')) {
-            var iframe = document.createElement('iframe');
-            iframe.src = talk.dataset.youtubeEmbed;
-            iframe.setAttribute('allowfullscreen', '');
-            iframe.allow = 'accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
-            videoDiv.appendChild(iframe);
+          if (videoDiv) {
+            videoDiv.classList.remove('expanded');
           }
-          btn.setAttribute('aria-expanded', 'true');
-          btn.classList.add('expanded');
-          videoDiv.classList.add('expanded');
+        } else {
+          if (videoDiv) {
+            if (!videoDiv.querySelector('iframe')) {
+              var iframe = document.createElement('iframe');
+              iframe.src = talk.dataset.youtubeEmbed;
+              iframe.setAttribute('allowfullscreen', '');
+              iframe.allow = 'accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+              videoDiv.appendChild(iframe);
+            }
+            btn.setAttribute('aria-expanded', 'true');
+            btn.classList.add('expanded');
+            videoDiv.classList.add('expanded');
+          }
         }
       });
     });

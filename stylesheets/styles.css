@@ -581,7 +581,6 @@ screen and (max-width: 480px) {
   background-color: #f8f8f8;
   border-left: 3px solid #5A6C7D;
   border-radius: 4px;
-  position: relative;
 }
 
 .talk-title {
