@@ -1,4 +1,4 @@
-# AI Meet Scientific Computing: Transforming Biology and Medicine
+# AI meets Scientific Computing: Transforming Biology and Medicine
 
 **Date:** December 11, 2024
 
@@ -10,7 +10,7 @@ the Auditório Professor David Ferreira (A52), Edifício Egas Moniz, at 13h.
 
 ![Keynote speaker announcement - Dia da Investigação 2024](../images/keynote_speaker_dia_da_investigacao_2024.png)
 
-The talk was titled **"AI Meet Scientific Computing: Transforming Biology and Medicine"** and covered
+The talk was titled **"AI meets Scientific Computing: Transforming Biology and Medicine"** and covered
 the intersection of artificial intelligence, scientific computing, and their transformative impact on
 biology and medicine - with a particular focus on how AI is reshaping drug discovery, protein structure
 prediction, and life sciences research.
