@@ -8,6 +8,10 @@
 
 Congrats Demis Hassabis and John Jumper! :) 😃
 
+![Nobel Prize in Chemistry 2024 winners David Baker, Demis Hassabis and John Jumper. Illustration: Niklas Elmehed / Nobel Prize Outreach](../images/nobel_prize_chemistry_2024_winners.jpg)
+
+*Nobel Prize in Chemistry 2024 winners David Baker, Demis Hassabis and John Jumper. Illustration: Niklas Elmehed / Nobel Prize Outreach*
+
 The Royal Swedish Academy of Sciences awarded the 2024 Nobel Prize in Chemistry with one half to
 David Baker "for computational protein design" and the other half jointly to Demis Hassabis and John M.
 Jumper "for protein structure prediction."
