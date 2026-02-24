@@ -1,4 +1,5 @@
-/* MeyerWeb Reset */
+/* CSS reset: start from a predictable baseline across browsers by
+   removing default spacing/borders and inheriting font settings. */
 
 html,
 body,
@@ -89,7 +90,8 @@ video {
 }
 
 
-/* Base text styles */
+/* Base typography and spacing: defines the default font, text color,
+   and vertical rhythm used by paragraphs/headings/lists. */
 
 body {
   padding: 10px 50px 0 0;
@@ -124,6 +126,8 @@ dl {
 h1,
 h2,
 h3 {
+  /* Display headings use a serif family to create stronger visual hierarchy
+     than body text while keeping line-height compact. */
   font-family: Arvo, Monaco, serif;
   line-height: 1.3;
   font-weight: normal;
@@ -157,6 +161,8 @@ h6 {
 }
 
 a {
+  /* Global link style: red color + no underline by default;
+     underline appears on hover for interactive affordance. */
   color: #C30000;
   font-weight: 200;
   text-decoration: none;
@@ -225,10 +231,11 @@ hr {
 }
 
 /* Images */
+/* Constrains images to content column width and gives them a framed look
+   (padding + border) so inline media appears visually separated from text. */
 
 img {
   position: relative;
-  margin: 0 auto;
   max-width: 650px;
   padding: 5px;
   margin: 10px 0 32px 0;
@@ -237,6 +244,7 @@ img {
 
 
 /* Code blocks */
+/* Uses monospace fonts to preserve alignment in code and terminal output. */
 
 code,
 pre {
@@ -246,6 +254,8 @@ pre {
 }
 
 pre {
+  /* overflow:auto allows horizontal scrolling when code lines are long,
+     preventing layout breakage on narrow screens. */
   padding: 4px 12px;
   background: #FDFEFB;
   border-radius: 4px;
@@ -260,9 +270,6 @@ pre {
 
 table {
   width: 100%;
-}
-
-table {
   border: 1px solid #ccc;
   margin-bottom: 32px;
   text-align: left;
@@ -289,7 +296,7 @@ td {
 }
 
 
-/* Header */
+/* Two-column layout (desktop): fixed left sidebar header + right content section. */
 
 header {
   background-color: #171717;
@@ -344,6 +351,8 @@ header ul {
 }
 
 header li {
+  /* Multiple gradient syntaxes are kept for compatibility with older browser
+     engines that interpret different legacy vendor-prefixed formats. */
   list-style-type: none;
   width: 132px;
   height: 15px;
@@ -396,7 +405,7 @@ a.buttons:hover {
 }
 
 
-/* Section - for main page content */
+/* Main content column (right side on desktop). */
 
 section {
   width: 650px;
@@ -418,6 +427,8 @@ footer {
 
 @media print,
 screen and (max-width: 960px) {
+  /* Responsive breakpoint: switch from fixed 2-column desktop layout
+     to a single-column flow for narrower screens and print. */
 
   div.wrapper {
     width: auto;
@@ -502,15 +513,18 @@ screen and (max-width: 480px) {
 
 }
 
-/* Publication styles */
-
-.publication {
+/* Reusable "content card" container used by publications, talks, and code projects. */
+.publication,
+.talk,
+.code-project {
   margin-bottom: 24px;
   padding: 12px;
   background-color: #f8f8f8;
   border-left: 3px solid #5A6C7D;
   border-radius: 4px;
 }
+
+/* Publication styles */
 
 .publication-title {
   font-weight: 700;
@@ -569,19 +583,11 @@ screen and (max-width: 480px) {
   font-weight: 700;
   text-transform: uppercase;
   margin-right: 8px;
-  margin-bottom: 0px;
+  margin-bottom: 0;
   vertical-align: top;
 }
 
 /* Talk styles */
-
-.talk {
-  margin-bottom: 24px;
-  padding: 12px;
-  background-color: #f8f8f8;
-  border-left: 3px solid #5A6C7D;
-  border-radius: 4px;
-}
 
 .talk-title {
   font-weight: 700;
@@ -619,7 +625,7 @@ screen and (max-width: 480px) {
   font-weight: 700;
   text-transform: uppercase;
   margin-right: 8px;
-  margin-bottom: 0px;
+  margin-bottom: 0;
   vertical-align: top;
 }
 
@@ -639,6 +645,7 @@ screen and (max-width: 480px) {
 }
 
 .talk-toggle {
+  /* Small disclosure button that rotates when expanded; JS toggles classes. */
   float: right;
   background: none;
   border: none;
@@ -658,6 +665,7 @@ screen and (max-width: 480px) {
   transform: rotate(180deg);
 }
 
+/* State classes toggled by JavaScript: collapsed by default, visible when "expanded". */
 .talk-video {
   display: none;
   margin-top: 12px;
@@ -676,14 +684,6 @@ screen and (max-width: 480px) {
 
 /* Code project styles */
 
-.code-project {
-  margin-bottom: 24px;
-  padding: 12px;
-  background-color: #f8f8f8;
-  border-left: 3px solid #5A6C7D;
-  border-radius: 4px;
-}
-
 .code-project-title {
   font-weight: 700;
   font-size: 15px;
@@ -691,7 +691,6 @@ screen and (max-width: 480px) {
   margin-bottom: 4px;
   line-height: 1.4;
   display: inline;
-  font-weight: bold;
 }
 
 .code-project-description {
@@ -743,6 +742,8 @@ screen and (max-width: 480px) {
 }
 
 /* Blog post styles */
+/* Blog entries are rendered as "cards" with a subtle hover motion and shadow
+   to signal clickability without changing page layout drastically. */
 
 .blog-post {
   display: block;
@@ -807,6 +808,7 @@ screen and (max-width: 480px) {
 }
 
 @media print {
+  /* Print mode: simpler spacing and larger physical font units (pt/in). */
   body {
     padding: 0.4in;
     font-size: 12pt;
@@ -815,6 +817,7 @@ screen and (max-width: 480px) {
 }
 
 /* Book styles */
+/* Flexbox keeps book cover + description side by side on desktop. */
 .book-section {
   display: flex;
   align-items: flex-start;
@@ -858,6 +861,7 @@ screen and (max-width: 480px) {
 }
 
 .book-toc {
+  /* Hidden by default; revealed when JS adds the .expanded class. */
   display: none;
   margin-top: 10px;
   margin-bottom: 0;
@@ -880,6 +884,7 @@ screen and (max-width: 480px) {
 }
 
 /* Inspiration/Quotes styles */
+/* Quote cards use low-contrast shadows and slight hover lift for depth. */
 .inspiration-section {
   margin-top: 40px;
 }
