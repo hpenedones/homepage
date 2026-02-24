@@ -8,6 +8,6 @@
 
 Here you have a nice and very informative Google Tech Talk by Dr. Deborah Gordon on how ant colonies work without any central control:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/R07_JFfnFnY" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/R07_JFfnFnY" frameborder="0" allowfullscreen title="Google Tech Talk: How Ant Colonies Get Things Done by Dr. Deborah Gordon"></iframe>
 
 It seems that ants make most of their decisions just based on the frequency they encounter other ants (which have a specific smell according to their role in the colony).

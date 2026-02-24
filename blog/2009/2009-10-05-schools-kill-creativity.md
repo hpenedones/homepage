@@ -8,7 +8,7 @@
 
 My good friend Miguel called my attention to a TED talk that you might also find interesting:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/iG9CE55wbtY" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/iG9CE55wbtY" frameborder="0" allowfullscreen title="TED Talk: Do schools kill creativity? by Ken Robinson"></iframe>
 
 [Ken Robinson: Do schools kill creativity?](https://www.youtube.com/watch?v=iG9CE55wbtY)
 
