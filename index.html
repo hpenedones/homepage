@@ -340,6 +340,41 @@ AI4Science: AI-empowered Scientific Exploration</a></div>
             <a href="https://www.lulu.com/shop/hugo-penedones/a-nossa-vez/paperback/product-19q79yk8.html">paperback
               copy</a>.
           </p>
+
+          <button class="book-toc-toggle" aria-expanded="false" aria-controls="book-toc">Conteúdo ▼</button>
+          <ol class="book-toc" id="book-toc">
+            <li>Prefácio</li>
+            <li>Direita ou Esquerda?</li>
+            <li>Criação de riqueza</li>
+            <li>Pertencer a um grupo</li>
+            <li>Dogmas</li>
+            <li>Os interesses comuns</li>
+            <li>Sempre insatisfeitos</li>
+            <li>Por favor, despeçam o meu professor!</li>
+            <li>Talentos diferentes</li>
+            <li>Tenho uma casa vazia</li>
+            <li>Telemóveis e homicídios</li>
+            <li>A falácia do desemprego</li>
+            <li>O milagre da transparência</li>
+            <li>O fim da televisão</li>
+            <li>O fim dos bancos</li>
+            <li>O fim da geoestratégia militar</li>
+            <li>O fim do exército</li>
+            <li>Idades de reforma e natalidade</li>
+            <li>Pagar o custo real</li>
+            <li>Reciclar, reutilizar, reduzir</li>
+            <li>A importância do sentido de humor</li>
+            <li>A importância da determinação</li>
+            <li>A importância de nos conhecermos</li>
+            <li>A importância dos direitos das minorias</li>
+            <li>À espera de um salvador</li>
+            <li>Geração à Rasca e o 25 de Abril 2.0</li>
+            <li>O que temos a ganhar?</li>
+            <li>David contra Golias</li>
+            <li>Prólogo</li>
+            <li>Agradecimentos</li>
+            <li>Sobre o autor</li>
+          </ol>
         </div>
       </div>
 
@@ -424,6 +459,18 @@ AI4Science: AI-empowered Scientific Exploration</a></div>
   <!--[if !IE]><script>fixScale(document);</script><![endif]-->
 
   <script>
+    (function() {
+      var btn = document.querySelector('.book-toc-toggle');
+      if (!btn) return;
+      var toc = document.getElementById('book-toc');
+      btn.addEventListener('click', function() {
+        var expanded = btn.getAttribute('aria-expanded') === 'true';
+        btn.setAttribute('aria-expanded', expanded ? 'false' : 'true');
+        btn.textContent = expanded ? 'Conteúdo ▼' : 'Conteúdo ▲';
+        if (toc) toc.classList.toggle('expanded', !expanded);
+      });
+    })();
+
     document.querySelectorAll('.talk-toggle').forEach(function(btn, index) {
       var talk = btn.closest('.talk');
       if (!talk) {
