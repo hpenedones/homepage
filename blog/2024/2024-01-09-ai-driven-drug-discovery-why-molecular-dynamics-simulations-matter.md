@@ -1,4 +1,4 @@
-# AI-Driven Drug Discovery: Molecular Dynamics Simulations Will Be Key
+# AI-Driven Drug Discovery: Why Molecular Dynamics Simulations Matter
 
 **Date:** January 9, 2024
 
