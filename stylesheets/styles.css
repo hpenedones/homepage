@@ -1,4 +1,5 @@
-/* MeyerWeb Reset */
+/* CSS reset: start from a predictable baseline across browsers by
+   removing default spacing/borders and inheriting font settings. */
 
 html,
 body,
@@ -89,7 +90,8 @@ video {
 }
 
 
-/* Base text styles */
+/* Base typography and spacing: defines the default font, text color,
+   and vertical rhythm used by paragraphs/headings/lists. */
 
 body {
   padding: 10px 50px 0 0;
@@ -228,7 +230,6 @@ hr {
 
 img {
   position: relative;
-  margin: 0 auto;
   max-width: 650px;
   padding: 5px;
   margin: 10px 0 32px 0;
@@ -260,9 +261,6 @@ pre {
 
 table {
   width: 100%;
-}
-
-table {
   border: 1px solid #ccc;
   margin-bottom: 32px;
   text-align: left;
@@ -289,7 +287,7 @@ td {
 }
 
 
-/* Header */
+/* Two-column layout (desktop): fixed left sidebar header + right content section. */
 
 header {
   background-color: #171717;
@@ -396,7 +394,7 @@ a.buttons:hover {
 }
 
 
-/* Section - for main page content */
+/* Main content column (right side on desktop). */
 
 section {
   width: 650px;
@@ -418,6 +416,8 @@ footer {
 
 @media print,
 screen and (max-width: 960px) {
+  /* Responsive breakpoint: switch from fixed 2-column desktop layout
+     to a single-column flow for narrower screens and print. */
 
   div.wrapper {
     width: auto;
@@ -502,15 +502,18 @@ screen and (max-width: 480px) {
 
 }
 
-/* Publication styles */
-
-.publication {
+/* Reusable "content card" container used by publications, talks, and code projects. */
+.publication,
+.talk,
+.code-project {
   margin-bottom: 24px;
   padding: 12px;
   background-color: #f8f8f8;
   border-left: 3px solid #5A6C7D;
   border-radius: 4px;
 }
+
+/* Publication styles */
 
 .publication-title {
   font-weight: 700;
@@ -569,19 +572,11 @@ screen and (max-width: 480px) {
   font-weight: 700;
   text-transform: uppercase;
   margin-right: 8px;
-  margin-bottom: 0px;
+  margin-bottom: 0;
   vertical-align: top;
 }
 
 /* Talk styles */
-
-.talk {
-  margin-bottom: 24px;
-  padding: 12px;
-  background-color: #f8f8f8;
-  border-left: 3px solid #5A6C7D;
-  border-radius: 4px;
-}
 
 .talk-title {
   font-weight: 700;
@@ -619,7 +614,7 @@ screen and (max-width: 480px) {
   font-weight: 700;
   text-transform: uppercase;
   margin-right: 8px;
-  margin-bottom: 0px;
+  margin-bottom: 0;
   vertical-align: top;
 }
 
@@ -658,6 +653,7 @@ screen and (max-width: 480px) {
   transform: rotate(180deg);
 }
 
+/* State classes toggled by JavaScript: collapsed by default, visible when "expanded". */
 .talk-video {
   display: none;
   margin-top: 12px;
@@ -676,14 +672,6 @@ screen and (max-width: 480px) {
 
 /* Code project styles */
 
-.code-project {
-  margin-bottom: 24px;
-  padding: 12px;
-  background-color: #f8f8f8;
-  border-left: 3px solid #5A6C7D;
-  border-radius: 4px;
-}
-
 .code-project-title {
   font-weight: 700;
   font-size: 15px;
@@ -691,7 +679,6 @@ screen and (max-width: 480px) {
   margin-bottom: 4px;
   line-height: 1.4;
   display: inline;
-  font-weight: bold;
 }
 
 .code-project-description {
