@@ -19,4 +19,6 @@ In 2024 we would see a breakthrough in LLMs for Math and it would probably invol
 
 See a screenshot of my last slides.
 
+![Screenshot of last slide from talk at NOVA de Lisboa, January 2024](../images/forecasted_future_alphagoemetry_slide.jpg)
+
 Well, here is [AlphaGeometry by Google DeepMind](https://deepmind.google/discover/blog/alphageometry-an-olympiad-level-ai-system-for-geometry/) (congrats!).
