@@ -8,6 +8,8 @@
 
 That feeling when Schmidhuber cites your (not well known) RL paper! 😝
 
+![Schmidhuber citing our 2019 NeurIPS RL paper](../images/schmidhuber_cites_rl_paper.jpg)
+
 Our 2019 NeurIPS paper ["Adaptive Temporal-Difference Learning for Policy Evaluation with Per-State
 Uncertainty Estimates"](https://arxiv.org/abs/1906.07871) didn't catch much attention, but it actually
 addresses a very fundamental problem in Deep Reinforcement Learning: how can you trust Temporal
