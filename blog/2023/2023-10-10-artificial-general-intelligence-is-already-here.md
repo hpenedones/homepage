@@ -6,7 +6,11 @@
 
 ---
 
-I tend to agree. AI systems used to perform better than humans on some specific narrow tasks (e.g.
+I tend to agree with Blaise Aguera y Arcas and Peter Norvig, who argue in their Noema Magazine article
+["Artificial General Intelligence Is Already Here"](https://www.noemamag.com/artificial-general-intelligence-is-already-here/)
+that today's most advanced AI models should already be recognised as the first true examples of AGI.
+
+Their key insight: AI systems used to perform better than humans on some specific narrow tasks (e.g.
 chess). But they couldn't do anything else.
 
 Now the situation is reversed: you can still find human experts that give better answers than ChatGPT
