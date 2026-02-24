@@ -11,3 +11,5 @@ contribuições da área de Machine Learning nos prémios Nobel de 2024. Apareç
 
 *(Today at 17:30 at the Faculty of Sciences of the University of Porto, a talk about the contributions
 of Machine Learning to the 2024 Nobel Prizes. Come join!)*
+
+![Talk at FCUP on Machine Learning and the 2024 Nobel Prizes](../images/fcup_talk_nobel_prizes_2024.jpg)

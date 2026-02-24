@@ -21,3 +21,16 @@ the mini batch contained a set of completely different states. But if you now us
 to bootstrap the value of another, you might be propagating estimation errors further. We suggested a
 technique using uncertainty estimation, that can cleverly decide, at each state, whether you should
 rely on Monte Carlo targets or you can trust TD targets.
+
+Seems like in 2021 it was also cited by Michael Jordan (Berkeley). 🤯 With a total of only 8
+citations, 2 are from papers of legendary, highly influential ML researchers.
+
+A precursor paper to this one, which also has only 8 citations, includes mentions from E Bengio
+(Yoshua's son), Joelle Pineau and Doina Precup. Another precursor paper, that has only 14 citations,
+was cited in one of Rich Sutton's papers.
+
+I'm going to update my "research pride index" to focus less on AlphaFold 1 and increase the weight
+on this line of RL research! Like in PageRank -- citations from more prestigious, influential
+scientists, weigh more. Eh eh. 😀
+
+Back to real life... 🌞😎
