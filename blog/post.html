@@ -64,9 +64,15 @@
         return `${year}/${slug}.md`;
       }
 
+      function getPostSlugFromHash() {
+        const hashValue = window.location.hash.substring(1);
+        const match = hashValue.match(/^\d{4}-\d{2}-\d{2}-[\w-]+/);
+        return match ? match[0] : '';
+      }
+
       async function loadPost() {
         // Get the slug from the URL hash (format: #2023-05-30-programming-at-inductiva)
-        const slug = window.location.hash.substring(1); // Remove the # character
+        const slug = getPostSlugFromHash();
 
         if (!slug) {
           document.getElementById('post-content').innerHTML = '<p>No post specified.</p>';
@@ -89,9 +95,13 @@
         }
       }
 
-      // Load post on page load and when hash changes
+      // Load post on page load and when hash changes to another post slug
       loadPost();
-      window.addEventListener('hashchange', loadPost);
+      window.addEventListener('hashchange', () => {
+        if (getPostSlugFromHash()) {
+          loadPost();
+        }
+      });
     </script>
 
   </body>
