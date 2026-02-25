@@ -43,8 +43,13 @@
       marked.use({
         renderer: {
           heading(text, level) {
+            const decodedText = (() => {
+              const textarea = document.createElement('textarea');
+              textarea.innerHTML = text;
+              return textarea.value;
+            })();
             // Generate slug from heading text (similar to GitHub-style slugs)
-            const slug = text
+            const slug = decodedText
               .toLowerCase()
               .replace(/[^\w\s-]/g, '') // Remove special characters except spaces and hyphens
               .replace(/\s+/g, '-')      // Replace spaces with hyphens
@@ -89,7 +94,26 @@
 
           const markdown = await response.text();
           const html = marked.parse(markdown);
-          document.getElementById('post-content').innerHTML = html;
+          const postContent = document.getElementById('post-content');
+          postContent.innerHTML = html;
+          if (!postContent.dataset.anchorHandlerSet) {
+            postContent.addEventListener('click', (event) => {
+              const anchorLink = event.target.closest('a[href^="#"]');
+              if (!anchorLink) {
+                return;
+              }
+
+              const anchorId = anchorLink.getAttribute('href').substring(1);
+              const target = document.getElementById(anchorId);
+              if (!target) {
+                return;
+              }
+
+              event.preventDefault();
+              target.scrollIntoView();
+            });
+            postContent.dataset.anchorHandlerSet = 'true';
+          }
         } catch (error) {
           document.getElementById('post-content').innerHTML = '<p>Error loading post: ' + error.message + '</p>';
         }
