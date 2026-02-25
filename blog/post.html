@@ -43,6 +43,8 @@
       marked.use({
         renderer: {
           heading(text, level) {
+            // `text` may include HTML entities (e.g., &#39;). Decode first so heading IDs
+            // match markdown in-page links such as #dry-dont-repeat-yourself.
             const decodedText = (() => {
               const textarea = document.createElement('textarea');
               textarea.innerHTML = text;
@@ -97,6 +99,8 @@
           const postContent = document.getElementById('post-content');
           postContent.innerHTML = html;
           if (!postContent.dataset.anchorHandlerSet) {
+            // Keep the post slug in the URL hash (shareable link) while still supporting
+            // in-post navigation to section anchors.
             postContent.addEventListener('click', (event) => {
               const anchorLink = event.target.closest('a[href^="#"]');
               if (!anchorLink) {
