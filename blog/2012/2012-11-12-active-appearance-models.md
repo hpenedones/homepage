@@ -9,7 +9,7 @@
 Lately, I have been working with Deformable Models and I am surprised by how well they can work.
 
 <video width="560" height="315" controls title="Active Appearance Models face tracking demo">
-  <source src="../videos/active-appearance-models.mp4" type="video/mp4">
+  <source src="videos/active-appearance-models.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 
