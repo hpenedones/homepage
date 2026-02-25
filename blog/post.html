@@ -98,6 +98,7 @@
           const html = marked.parse(markdown);
           const postContent = document.getElementById('post-content');
           postContent.innerHTML = html;
+          // Blog post links are injected after page load, so apply external-link behavior here.
           const links = postContent.querySelectorAll('a[href]');
           for (const link of links) {
             const href = link.getAttribute('href');
