@@ -1,4 +1,5 @@
 fixScale = function(doc) {
+	// Guard against running twice (pages may call fixScale and this file also auto-runs it).
 	if (doc.__fixScaleInitialized) return;
 	doc.__fixScaleInitialized = true;
 
@@ -8,6 +9,7 @@ fixScale = function(doc) {
 	    scales = [1, 1],
 	    meta = qsa in doc ? doc[qsa]('meta[name=viewport]') : [];
 
+	// External links open in a new tab so visitors keep this homepage open.
 	if (qsa in doc && doc.location) {
 		var links = doc[qsa]('a[href]');
 		for (var i = 0; i < links.length; i++) {
