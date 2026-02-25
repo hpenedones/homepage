@@ -98,6 +98,17 @@
           const html = marked.parse(markdown);
           const postContent = document.getElementById('post-content');
           postContent.innerHTML = html;
+          const links = postContent.querySelectorAll('a[href]');
+          for (const link of links) {
+            const href = link.getAttribute('href');
+            if (!href || href.charAt(0) === '#' || href.indexOf('mailto:') === 0 || href.indexOf('tel:') === 0) {
+              continue;
+            }
+            if (link.hostname && link.hostname !== window.location.hostname) {
+              link.setAttribute('target', '_blank');
+              link.setAttribute('rel', 'noopener noreferrer');
+            }
+          }
           if (!postContent.dataset.anchorHandlerSet) {
             // Keep the post slug in the URL hash (shareable link) while still supporting
             // in-post navigation to section anchors.
