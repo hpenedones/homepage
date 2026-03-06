@@ -8,9 +8,6 @@
       <div id="post-content">
         <h1>{{ .Title }}</h1>
         <p class="blog-post-date">{{ .Date.Format "January 2, 2006" }}</p>
-        {{ if .Params.originalURL }}
-          <p class="blog-post-original"><a href="{{ .Params.originalURL }}">Original post</a></p>
-        {{ end }}
         {{ .Content }}
       </div>
 {{ end }}
