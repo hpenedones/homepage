@@ -1,0 +1,29 @@
+- title: "Will there be more Nobels for AI?"
+  url: "https://youtu.be/JM-SBUY89Jg?t=8657"
+  youtube_embed: "https://www.youtube.com/embed/JM-SBUY89Jg?start=8657"
+  venue: "Machine Learning for Science and Engineering Summer School, 2025"
+
+- title: "Scientific Machine Learning"
+  url: "https://www.youtube.com/watch?v=WtlSSZ3JX-M"
+  youtube_embed: "https://www.youtube.com/embed/WtlSSZ3JX-M"
+  venue: "Deep Learning for NIR Chemometrics workshop, University of Algarve, 2024"
+
+- title: "Tackling Scientific Problems with Deep Learning"
+  url: "https://www.youtube.com/watch?v=ZJ8FwyphSOI"
+  youtube_embed: "https://www.youtube.com/embed/ZJ8FwyphSOI"
+  venue: "The Science Circle, hosted by Jousef Murad, 2022"
+
+- title: "Reinforcement Learning and Long-Term Value Prediction"
+  url: "https://youtu.be/-kntKCtm6M8"
+  youtube_embed: "https://www.youtube.com/embed/-kntKCtm6M8"
+  venue: "JNation, 2020"
+
+- title: "Real-World Reinforcement Learning - Challenges and Opportunities"
+  url: "https://youtu.be/Lc8yaCs7C8s"
+  youtube_embed: "https://www.youtube.com/embed/Lc8yaCs7C8s"
+  venue: "DSPT day, 2019"
+
+- title: "Deep Reinforcement Learning in 25 minutes, for non-experts"
+  url: "https://www.youtube.com/watch?v=FYQEB_Nfu74&t=1s&frags=pl%2Cwn"
+  youtube_embed: "https://www.youtube.com/embed/FYQEB_Nfu74?start=1"
+  venue: "Commit Porto, 2018"

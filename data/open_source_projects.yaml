@@ -1,0 +1,49 @@
+main:
+  - name: "pyfacelabel"
+    url: "https://github.com/hpenedones/pyfacelabel"
+    description: "Python GUI to annotate face landmarks. Points can be predicted by pre-existing ML model, users just needs to apply small fixes."
+
+  - name: "pose_embedding"
+    url: "https://github.com/hpenedones/pose_embedding"
+    description: "Lua code for learning pose-aware visual representations to improve object classification accuracy. Code for the research paper \"Improving Object Classification using Pose Information\"."
+
+  - name: "luacnn"
+    url: "https://github.com/hpenedones/luacnn"
+    description: "Convolutional Neural Networks for handwritten digit recognition using Torch7 and Lua."
+
+  - name: "torch_roc"
+    url: "https://github.com/hpenedones/torch_roc"
+    description: "A Lua Torch package for evaluating machine learning binary classifiers via ROC curves."
+
+  - name: "kdtree"
+    url: "https://github.com/hpenedones/kdtree"
+    description: "K-d tree implementation in C++ for efficient nearest neighbour search in multi-dimensional spaces."
+
+  - name: "lakeml"
+    url: "https://github.com/hpenedones/lakeml"
+    description: "Machine learning algorithms implemented in C++. A collection of ML algorithms from scratch for educational and research purposes."
+
+  - name: "partitracker"
+    url: "https://github.com/hpenedones/partitracker"
+    description: "Simple particle filter tracker in C++. Implementation of particle filtering for object tracking in computer vision."
+
+  - name: "sudoku"
+    url: "https://github.com/hpenedones/sudoku"
+    description: "A fast Sudoku solver implemented in C with a Python wrapper. Demonstrates efficient constraint satisfaction problem solving."
+
+  - name: "fractals"
+    url: "https://github.com/hpenedones/fractals"
+    description: "Interactive, zoomable fractals using PyGame. Explore the beauty of mathematical fractals with real-time rendering."
+
+  - name: "ngrams_autocomplete"
+    url: "https://github.com/hpenedones/ngrams_autocomplete"
+    description: "A character-based n-grams language model for probabilistic query autocomplete. Given a text prefix, it suggests the most likely completions based on a trained model."
+
+competitive_programming:
+  - name: "acm_utils"
+    url: "https://github.com/hpenedones/acm_utils"
+    description: "Data structures and algorithms useful for programming competitions. A collection of competitive programming utilities and problem-solving patterns."
+
+  - name: "acm_solutions"
+    url: "https://github.com/hpenedones/acm_solutions"
+    description: "My solutions to a set of competitive programming problems."
