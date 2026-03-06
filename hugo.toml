@@ -1,0 +1,23 @@
+baseURL = "https://hpenedones.me/"
+languageCode = "en-us"
+title = "Hugo Penedones"
+pluralizeListTitles = false
+
+# Disable built-in taxonomy pages (tags/categories not used)
+disableKinds = ["taxonomy", "term"]
+
+# Do not generate built-in robots.txt; we use our own in static/
+enableRobotsTXT = false
+
+[markup.goldmark.renderer]
+  # Allow raw HTML in Markdown (needed for <iframe>, <video> in blog posts)
+  unsafe = true
+
+[markup.highlight]
+  # Use CSS classes rather than inline styles so pygment_trac.css applies
+  noClasses = false
+  codeFences = true
+
+[sitemap]
+  changefreq = "monthly"
+  priority = 0.5

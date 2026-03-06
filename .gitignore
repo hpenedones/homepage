@@ -1,3 +1,7 @@
 *.DS_Store
 blog/posts_array.js
 wget-log
+# Hugo build output
+public/
+.hugo_build.lock
+resources/

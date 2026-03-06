@@ -1,0 +1,16 @@
+{{ define "header" }}
+      <h1 class="header">Hugo Penedones</h1>
+      <img src="/images/hugo.jpg" width="120" height="120" alt="Hugo Penedones" />
+      <p><a href="/blog/">← Back to blog</a></p>
+{{ end }}
+
+{{ define "main" }}
+      <div id="post-content">
+        <h1>{{ .Title }}</h1>
+        <p class="blog-post-date">{{ .Date.Format "January 2, 2006" }}</p>
+        {{ if .Params.originalURL }}
+          <p class="blog-post-original"><a href="{{ .Params.originalURL }}">Original post</a></p>
+        {{ end }}
+        {{ .Content }}
+      </div>
+{{ end }}
