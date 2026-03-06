@@ -1,0 +1,81 @@
+sections:
+  - name: "AlphaFold 1 / Computational Biology"
+    publications:
+      - label: "Nature"
+        title: "Improved protein structure prediction using potentials from deep learning"
+        authors: "Andrew W Senior, Richard Evans, John Jumper, James Kirkpatrick, Laurent Sifre, Tim Green, Chongli Qin, Augustin Žídek, Alexander WR Nelson, Alex Bridgland, Hugo Penedones, Stig Petersen, Karen Simonyan, Steve Crossan, Pushmeet Kohli, David T Jones, David Silver, Koray Kavukcuoglu, Demis Hassabis"
+        venue: "Nature journal, 15 Jan 2020"
+        links:
+          - label: "Read online"
+            url: "https://rdcu.be/b0mtx"
+
+      - title: "Protein structure prediction using multiple deep neural networks in the 13th Critical Assessment of Protein Structure Prediction (CASP13)"
+        authors: "Andrew W Senior, Richard Evans, John Jumper, James Kirkpatrick, Laurent Sifre, Tim Green, Chongli Qin, Augustin Žídek, Alexander WR Nelson, Alex Bridgland, Hugo Penedones, Stig Petersen, Karen Simonyan, Steve Crossan, Pushmeet Kohli, David T Jones, David Silver, Koray Kavukcuoglu, Demis Hassabis"
+        venue: "Proteins: Structure, Function, and Bioinformatics, 2019"
+        links:
+          - label: "Read online"
+            url: "https://onlinelibrary.wiley.com/doi/full/10.1002/prot.25834"
+
+  - name: "Reinforcement Learning"
+    publications:
+      - label: "NeurIPS"
+        title: "Adaptive Temporal-Difference Learning for Policy Evaluation with Per-State Uncertainty Estimates"
+        pdf_url: "http://papers.nips.cc/paper/9359-adaptive-temporal-difference-learning-for-policy-evaluation-with-per-state-uncertainty-estimates.pdf"
+        authors: "Hugo Penedones, Carlos Riquelme, Damien Vincent, Hartmut Maennel, Timothy Mann, André Barreto, Sylvain Gelly, Gergely Neu"
+        venue: "NeurIPS, December 2019"
+
+      - title: "Temporal Difference Learning with Neural Networks - Study of the Leakage Propagation Problem"
+        pdf_url: "https://arxiv.org/pdf/1807.03064v1.pdf"
+        authors: "H. Penedones, D. Vincent, Hartmut Maennel, S. Gelly, T. Mann, A. Barreto"
+        venue: "July 2018"
+
+      - title: "Adaptive Lambda Least-Squares Temporal Difference Learning"
+        pdf_url: "https://arxiv.org/pdf/1612.09465v1.pdf"
+        authors: "T. Mann, H. Penedones, S. Mannor, T. Hester"
+        venue: "December 2016"
+
+  - name: "AI &amp; Numerical Simulation"
+    publications:
+      - title: "Easily deploying OpenFOAM applications with Python and Cloud-HPC"
+        pdf_url: "/publications/inductiva-foam-iberia-2024.pdf"
+        authors: "Rodrigo Valério, Hugo Penedones, Luís Sarmento"
+        venue: "6th FOAM@Iberia Conference, Oct 2024"
+
+      - title: "Running Hydraulics Simulations at Scale Using Inductiva Python API"
+        pdf_url: "/publications/inductiva-coce-2024.pdf"
+        authors: "Luís Sarmento, Hugo Penedones, Sérgio Santos, Paulo Barbosa"
+        venue: "COCE 2024, Valencia, Spain, Nov 2024"
+
+      - title: "SimuStruct: simulated structural plate with holes dataset with machine learning applications"
+        pdf_url: "/publications/openreview-simstruct-dataset.pdf"
+        authors: "Bruno Alves Ribeiro, João Alves Ribeiro, Hugo Penedones, Luís Sarmento, Jorge Belinha, Miguel Anibal Bessa, Sérgio Tavares, Faez Ahmed"
+        venue: "Workshop on Machine Learning for Materials, ICLR 2023"
+
+  - name: "AI for Mathematics"
+    publications:
+      - title: "Equivariant neural networks for recovery of Hadamard matrices"
+        pdf_url: "https://arxiv.org/pdf/2201.13157"
+        authors: "Augusto Peres, Eduardo Dias, Luís Sarmento, Hugo Penedones"
+        venue: "arXiv, January 2022"
+
+  - name: "Computer Vision"
+    publications:
+      - title: "Improving Object Classification using Pose Information"
+        pdf_url: "/publications/Penedones_Idiap-RR-30-2012.pdf"
+        authors: "H. Penedones, R. Collobert, F. Fleuret, D. Grangier"
+        venue: "Idiap Research Report, 2011"
+        links:
+          - label: "Code"
+            url: "https://github.com/hpenedones/pose_embedding"
+
+      - title: "Playground Learning for Object Detection"
+        pdf_url: "/publications/playground_learning.pdf"
+        authors: "H. Penedones, F. Fleuret"
+        venue: "Idiap Internal Research Report, 2009"
+
+  - name: "AI for Space"
+    publications:
+      - title: "Predicting Venus Express Thermal Power Consumption"
+        pdf_url: "/publications/spaceops2008_predicting_vex_thermal_.pdf"
+        authors: "H. Penedones, B. Sousa, A. Donati, J. Martinez-Heras"
+        venue: "SpaceOps 2008 Conference Proceedings, Heidelberg, Germany"
