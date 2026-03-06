@@ -3,7 +3,7 @@
   <title>{{ if .IsHome }}Hugo Penedones Homepage{{ else }}{{ .Title }} — Hugo Penedones{{ end }}</title>
 
   <link rel="stylesheet" href="/stylesheets/styles.css">
-  <link rel="stylesheet" href="/stylesheets/pygment_trac.css">
+  {{ if eq .Kind "page" }}<link rel="stylesheet" href="/stylesheets/pygment_trac.css">{{ end }}
   <link rel="icon" href="/favicon.ico">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
