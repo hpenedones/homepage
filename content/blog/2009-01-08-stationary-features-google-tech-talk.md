@@ -1,0 +1,12 @@
+---
+title: "Stationary Features - Google Tech Talk"
+date: 2009-01-08
+originalURL: "https://aboutintelligence.blogspot.com/2009/01/stationary-features-google-tech-talk.html"
+---
+
+François Fleuret, my PhD advisor, recently gave a talk about object detection at Google (Zurich offices).
+You can now see it online:
+
+https://www.youtube.com/watch?v=-w72_VwSj6A&t=3s
+
+If you wonder where my research will try to extend the work done so far, just go to minute 45:30!

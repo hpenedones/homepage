@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  {{ partial "head.html" . }}
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+      {{ block "header" . }}
+      <h1 class="header">Hugo Penedones</h1>
+      {{ end }}
+    </header>
+    <section role="main">
+      {{ block "main" . }}{{ end }}
+    </section>
+    <footer>
+    </footer>
+  </div>
+  <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+  {{ block "scripts" . }}{{ end }}
+</body>
+
+</html>

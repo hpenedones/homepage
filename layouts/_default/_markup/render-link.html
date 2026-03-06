@@ -1,0 +1,6 @@
+{{- $href := .Destination -}}
+{{- $isExternal := and (ne (index $href 0) '#') (not (hasPrefix $href "mailto:")) (not (hasPrefix $href "tel:")) (or (hasPrefix $href "http://") (hasPrefix $href "https://") (hasPrefix $href "//")) -}}
+<a href="{{ $href }}"
+  {{- with .Title }} title="{{ . }}"{{ end -}}
+  {{- if $isExternal }} target="_blank" rel="noopener noreferrer"{{ end -}}
+>{{ .Text | safeHTML }}</a>

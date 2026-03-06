@@ -1,0 +1,26 @@
+{{ define "header" }}
+      <h1 class="header">Hugo Penedones</h1>
+      <img src="/images/hugo.jpg" width="120" height="120" alt="Hugo Penedones" />
+      <p><a href="/">← Back to homepage</a></p>
+{{ end }}
+
+{{ define "main" }}
+      <h2>Blog</h2>
+      <div id="blog-posts">
+        {{ $currentYear := "" }}
+        {{ range (where .Site.RegularPages "Section" "blog") }}
+          {{ $year := .Date.Format "2006" }}
+          {{ if ne $year $currentYear }}
+            {{ if ne $currentYear "" }}</div>{{ end }}
+            <h3 style="margin-top: {{ if eq $currentYear "" }}0{{ else }}40px{{ end }}; margin-bottom: 20px;">{{ $year }}</h3>
+            <div>
+            {{ $currentYear = $year }}
+          {{ end }}
+          <a class="blog-post" href="{{ .RelPermalink }}">
+            <div class="blog-post-title">{{ .Title }}</div>
+            <div class="blog-post-date">{{ .Date.Format "2006-01-02" }}</div>
+          </a>
+        {{ end }}
+        {{ if ne $currentYear "" }}</div>{{ end }}
+      </div>
+{{ end }}

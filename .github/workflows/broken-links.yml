@@ -18,15 +18,24 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Check links in HTML and Markdown files
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: "latest"
+          extended: true
+
+      - name: Build site
+        run: hugo
+
+      - name: Check links in built HTML and Markdown sources
         uses: lycheeverse/lychee-action@v1
         with:
-          # Check HTML and Markdown files
+          # Check built HTML output and source Markdown content files
           args: |
             --verbose
             --no-progress
             --config .lychee.toml
-            '**/*.html' '**/*.md'
+            './public/**/*.html' './content/**/*.md'
 
           # Fail the workflow if broken links are found
           fail: true

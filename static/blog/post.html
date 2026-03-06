@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Redirecting…</title>
+  <script>
+    // Redirect old hash-based blog URLs to the new Hugo URL structure.
+    // Old URL: /blog/post.html#2023-05-30-programming-principles
+    // New URL: /blog/2023-05-30-programming-principles/
+    (function () {
+      var hash = window.location.hash;
+      if (hash && hash.length > 1) {
+        var slug = hash.substring(1);
+        // Only redirect valid post slugs (YYYY-MM-DD-...)
+        if (/^\d{4}-\d{2}-\d{2}-[\w-]+$/.test(slug)) {
+          window.location.replace('/blog/' + slug + '/');
+          return;
+        }
+      }
+      // No valid slug found, go to blog index
+      window.location.replace('/blog/');
+    })();
+  </script>
+  <noscript>
+    <meta http-equiv="refresh" content="0; url=/blog/">
+  </noscript>
+</head>
+<body>
+  <p>Redirecting to <a href="/blog/">blog</a>…</p>
+</body>
+</html>
