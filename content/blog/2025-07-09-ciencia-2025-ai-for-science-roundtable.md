@@ -11,3 +11,7 @@ simulation and physics datasets generation really easy and affordable.
 At [Nova School of Business and Economics](https://www.novasbe.unl.pt/).
 
 ![Ciência 2025 roundtable at Nova SBE, July 2025](/images/ciencia_2025_roundtable.jpg)
+
+Here is a 1 min flash interview I gave at the event, sharing my thoughts on the role of AI and numerical simulation for science and engineering.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/EtXgJe-Zf2g" frameborder="0" allowfullscreen title="Quick interview at Ciência 2025 roundtable on AI for Science"></iframe>
