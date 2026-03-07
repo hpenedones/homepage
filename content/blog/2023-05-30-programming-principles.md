@@ -51,7 +51,7 @@ Below is an often-shared cartoon illustrating in a funny way how code complexity
 
 The last stage is one in which the programmer becomes able to solve complex problems, while writing simple and elegant solutions.
 
-![Code complexity as a function of programmer's experience](..//images/code_complexity.png)
+![Code complexity as a function of programmer's experience](/images/code_complexity.png)
 
 **Figure 1** - Code complexity as a function of programmer's experience [original source: unknown]
 
