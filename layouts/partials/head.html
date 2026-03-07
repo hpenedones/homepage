@@ -134,6 +134,33 @@
       border-left: 3px solid #5A6C7D;
       border-radius: 4px;
     }
+
+    /* Quote card layout — prevents CLS when async styles.css arrives */
+    .quote-card {
+      position: relative;
+      border: 1px solid #eee;
+      padding: 24px 30px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+    }
+
+    .quote-text {
+      display: block;
+      font-style: italic;
+      font-size: 16px;
+      line-height: 1.6;
+      margin-bottom: 12px;
+    }
+
+    .quote-author {
+      display: block;
+      font-size: 13px;
+      text-align: right;
+    }
+
+    .quote-author::before {
+      content: "— ";
+    }
   </style>
 
   <!-- Preload custom font with font-display optional to avoid layout shifts on font swap -->
