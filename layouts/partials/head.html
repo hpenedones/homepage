@@ -1,5 +1,4 @@
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="chrome=1">
   <title>{{ if .IsHome }}Hugo Penedones Homepage{{ else }}{{ .Title }} — Hugo Penedones{{ end }}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="{{ if .IsHome }}Hugo Penedones — Machine Learning engineer and researcher. Co-founder of inductiva.ai, early AlphaFold team member at Google DeepMind. Talks, publications, blog and open-source projects.{{ else if .Description }}{{ .Description }}{{ else }}{{ .Title }} — Hugo Penedones{{ end }}">
@@ -161,23 +160,33 @@
     .quote-author::before {
       content: "— ";
     }
+
+    /* Defer rendering of off-screen content to speed up first paint */
+    .talk, .publication, .code-project, .quote-card {
+      content-visibility: auto;
+      contain-intrinsic-size: auto 100px;
+    }
+    .book-section {
+      content-visibility: auto;
+      contain-intrinsic-size: auto 400px;
+    }
   </style>
 
   <!-- Preload custom font with font-display optional to avoid layout shifts on font swap -->
   <link rel="preload" href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400&display=optional" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400&display=optional"></noscript>
 
-  <!-- Load full CSS asynchronously -->
-  <link rel="preload" href="/stylesheets/styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="/stylesheets/styles.css"></noscript>
+  <!-- Load full CSS asynchronously (Hugo Pipes: minify + fingerprint for long cache) -->
+  {{ $styles := resources.Get "stylesheets/styles.css" | minify | fingerprint }}
+  <link rel="preload" href="{{ $styles.RelPermalink }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="{{ $styles.RelPermalink }}"></noscript>
   {{ if eq .Kind "page" }}
-  <link rel="preload" href="/stylesheets/pygment_trac.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="/stylesheets/pygment_trac.css"></noscript>
+  {{ $pygments := resources.Get "stylesheets/pygment_trac.css" | minify | fingerprint }}
+  <link rel="preload" href="{{ $pygments.RelPermalink }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="{{ $pygments.RelPermalink }}"></noscript>
   {{ end }}
 
-  <!-- Defer non-critical JavaScript -->
-  <script defer src="/javascripts/scale.fix.js"></script>
+  <!-- Defer non-critical JavaScript (Hugo Pipes: minify + fingerprint for long cache) -->
+  {{ $scaleFix := resources.Get "javascripts/scale.fix.js" | minify | fingerprint }}
+  <script defer src="{{ $scaleFix.RelPermalink }}"></script>
 
-  <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-  <![endif]-->

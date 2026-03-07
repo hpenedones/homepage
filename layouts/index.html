@@ -124,10 +124,7 @@
           </p>
 
           <button class="book-toc-toggle" aria-expanded="false" aria-controls="book-toc">Conteúdo ▼</button>
-          <ol class="book-toc" id="book-toc">
-            {{ range .toc }}
-            <li>{{ . }}</li>
-            {{ end }}
+          <ol class="book-toc" id="book-toc" data-items="{{ .toc | jsonify }}">
           </ol>
         </div>
       </div>
@@ -176,6 +173,15 @@
       var toc = document.getElementById('book-toc');
       btn.addEventListener('click', function() {
         var expanded = btn.getAttribute('aria-expanded') === 'true';
+        if (!expanded && toc && !toc.hasChildNodes()) {
+          try {
+            JSON.parse(toc.dataset.items).forEach(function(item) {
+              var li = document.createElement('li');
+              li.textContent = item;
+              toc.appendChild(li);
+            });
+          } catch(e) { console.error('Failed to render book TOC:', e); }
+        }
         btn.setAttribute('aria-expanded', expanded ? 'false' : 'true');
         btn.textContent = expanded ? 'Conteúdo ▼' : 'Conteúdo ▲';
         if (toc) toc.classList.toggle('expanded', !expanded);
