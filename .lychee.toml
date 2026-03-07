@@ -32,6 +32,10 @@ exclude = [
   # Google Gravatar (sometimes gives false positives)
   "gravatar.com",
 
+  # Google Fonts (CDN returns 404 to bots but works in browsers)
+  "fonts.googleapis.com",
+  "fonts.gstatic.com",
+
   # Some sites block automated requests
   "linkedin.com",
   "facebook.com",
