@@ -43,6 +43,7 @@ exclude = [
   "x.com",
 
   # Academic/publisher sites that block bots but are alive
+  "medicina.ulisboa.pt"
   "scholar.google.com",
   "onlinelibrary.wiley.com",
   "awards.acm.org",
