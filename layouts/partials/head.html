@@ -176,14 +176,17 @@
   <link rel="preload" href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400&display=optional" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400&display=optional"></noscript>
 
-  <!-- Load full CSS asynchronously -->
-  <link rel="preload" href="/stylesheets/styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="/stylesheets/styles.css"></noscript>
+  <!-- Load full CSS asynchronously (Hugo Pipes: minify + fingerprint for long cache) -->
+  {{ $styles := resources.Get "stylesheets/styles.css" | minify | fingerprint }}
+  <link rel="preload" href="{{ $styles.RelPermalink }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="{{ $styles.RelPermalink }}"></noscript>
   {{ if eq .Kind "page" }}
-  <link rel="preload" href="/stylesheets/pygment_trac.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="/stylesheets/pygment_trac.css"></noscript>
+  {{ $pygments := resources.Get "stylesheets/pygment_trac.css" | minify | fingerprint }}
+  <link rel="preload" href="{{ $pygments.RelPermalink }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="{{ $pygments.RelPermalink }}"></noscript>
   {{ end }}
 
-  <!-- Defer non-critical JavaScript -->
-  <script defer src="/javascripts/scale.fix.js"></script>
+  <!-- Defer non-critical JavaScript (Hugo Pipes: minify + fingerprint for long cache) -->
+  {{ $scaleFix := resources.Get "javascripts/scale.fix.js" | minify | fingerprint }}
+  <script defer src="{{ $scaleFix.RelPermalink }}"></script>
 
