@@ -9,9 +9,9 @@ So far, I have done a few very simple contributions to the torch ecosystem:
 
 1) Extended the matio package, which reads MAT files, to support structs, cell arrays and strings, in addition to loading tensors, which was already implemented.
 
-2) Started working on a metrics package for torch, which will compute things like ROC (Receiver Operator Curve) and Confusion Matrices. Probably dozens of other people have written similar code for torch, but I couldn't find an authoritative package doing just that. So, I started one at:
+2) Started working on a package for torch, that computes ROC (Receiver Operator Curve) for binary classifiers. Probably dozens of other people have written similar code for torch, but I couldn't find an authoritative package doing just that. So, I started one at:
 
-[https://github.com/hpenedones/metrics](https://github.com/hpenedones/metrics)
+[https://github.com/hpenedones/torch_roc](https://github.com/hpenedones/torch_roc)
 
 3) Finally, I did a small refactoring on my example project that uses convolutional neural networks for handwritten digit recognition. The code is now split into two files: one to load the USPS dataset and another one to create the network, train it and evaluate it. This makes it easier for new people to understand the example.
 
