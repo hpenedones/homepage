@@ -33,7 +33,7 @@
       {{ range $.Site.Data.podcasts }}
       <div class="talk" data-youtube-embed="{{ .youtube_embed }}">
         <button class="talk-toggle" aria-label="Toggle video" aria-expanded="false">▼</button>
-        <div class="talk-title"><a href="{{ .url }}"><img src="/images/youtube-small.png" alt="YouTube" class="youtube-icon"> {{ .title }}</a>
+        <div class="talk-title"><a href="{{ .url }}"><img src="/images/youtube-small.png" alt="YouTube" class="youtube-icon" width="24" height="24"> {{ .title }}</a>
           {{ with .short_version }}<span class="secondary-link">(<a href="{{ .url }}">{{ .label }}</a>)</span>{{ end }}
         </div>
         <div class="talk-venue">{{ .venue }}</div>
@@ -46,7 +46,7 @@
       {{ range $.Site.Data.roundtables }}
       <div class="talk" data-youtube-embed="{{ .youtube_embed }}">
         <button class="talk-toggle" aria-label="Toggle video" aria-expanded="false">▼</button>
-        <div class="talk-title"><a href="{{ .url }}"><img src="/images/youtube-small.png" alt="YouTube" class="youtube-icon"> {{ .title }}</a></div>
+        <div class="talk-title"><a href="{{ .url }}"><img src="/images/youtube-small.png" alt="YouTube" class="youtube-icon" width="24" height="24"> {{ .title }}</a></div>
         <div class="talk-venue">{{ .venue }}</div>
         <div class="talk-video"></div>
       </div>
@@ -57,7 +57,7 @@
       {{ range $.Site.Data.talks }}
       <div class="talk" data-youtube-embed="{{ .youtube_embed }}">
         <button class="talk-toggle" aria-label="Toggle video" aria-expanded="false">▼</button>
-        <div class="talk-title"><a href="{{ .url }}"><img src="/images/youtube-small.png" alt="YouTube" class="youtube-icon"> {{ .title }}</a></div>
+        <div class="talk-title"><a href="{{ .url }}"><img src="/images/youtube-small.png" alt="YouTube" class="youtube-icon" width="24" height="24"> {{ .title }}</a></div>
         <div class="talk-venue">{{ .venue }}</div>
         <div class="talk-video"></div>
       </div>
@@ -82,7 +82,7 @@
       <div class="publication">
         {{ with .label }}<div class="publication-label">{{ . }}</div>{{ end }}
         <div class="publication-title">
-          {{ with .pdf_url }}<a href="{{ . }}" class="publication-link"><img src="/images/pdf-icon.png" alt="PDF" class="pdf-icon"> {{ end }}
+          {{ with .pdf_url }}<a href="{{ . }}" class="publication-link"><img src="/images/pdf-icon.png" alt="PDF" class="pdf-icon" width="24" height="24"> {{ end }}
           {{ .title }}
           {{ with .pdf_url }}</a>{{ end }}
         </div>
@@ -153,7 +153,7 @@
 
       {{ range $.Site.Data.open_source_projects.main }}
       <div class="code-project">
-        <div class="code-project-title"><a href="{{ .url }}" class="code-project-link"><img src="/images/octocat-small.png" alt="GitHub" class="github-icon"> {{ .name }}</a></div>
+        <div class="code-project-title"><a href="{{ .url }}" class="code-project-link"><img src="/images/octocat-small.png" alt="GitHub" class="github-icon" width="24" height="24"> {{ .name }}</a></div>
         <div class="code-project-description">{{ .description }}</div>
       </div>
       {{ end }}
@@ -162,7 +162,7 @@
 
       {{ range $.Site.Data.open_source_projects.competitive_programming }}
       <div class="code-project">
-        <div class="code-project-title"><a href="{{ .url }}" class="code-project-link"><img src="/images/octocat-small.png" alt="GitHub" class="github-icon"> {{ .name }}</a></div>
+        <div class="code-project-title"><a href="{{ .url }}" class="code-project-link"><img src="/images/octocat-small.png" alt="GitHub" class="github-icon" width="24" height="24"> {{ .name }}</a></div>
         <div class="code-project-description">{{ .description }}</div>
       </div>
       {{ end }}
