@@ -1,5 +1,4 @@
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="chrome=1">
   <title>{{ if .IsHome }}Hugo Penedones Homepage{{ else }}{{ .Title }} — Hugo Penedones{{ end }}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="{{ if .IsHome }}Hugo Penedones — Machine Learning engineer and researcher. Co-founder of inductiva.ai, early AlphaFold team member at Google DeepMind. Talks, publications, blog and open-source projects.{{ else if .Description }}{{ .Description }}{{ else }}{{ .Title }} — Hugo Penedones{{ end }}">
@@ -161,6 +160,16 @@
     .quote-author::before {
       content: "— ";
     }
+
+    /* Defer rendering of off-screen content to speed up first paint */
+    .talk, .publication, .code-project, .quote-card {
+      content-visibility: auto;
+      contain-intrinsic-size: auto 100px;
+    }
+    .book-section {
+      content-visibility: auto;
+      contain-intrinsic-size: auto 400px;
+    }
   </style>
 
   <!-- Preload custom font with font-display optional to avoid layout shifts on font swap -->
@@ -178,6 +187,3 @@
   <!-- Defer non-critical JavaScript -->
   <script defer src="/javascripts/scale.fix.js"></script>
 
-  <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-  <![endif]-->
