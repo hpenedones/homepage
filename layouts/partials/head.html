@@ -10,7 +10,131 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
   <!-- Critical inline CSS for above-the-fold content -->
-  <style>html,body,div,span,h1,h2,h3,h4,h5,h6,p,a,img,ul,ol,li,header,section,footer{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}body{padding:10px 50px 0 0;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;color:#232323;background-color:#FBFAF7;line-height:1.8em;-webkit-font-smoothing:antialiased}h1,h2,h3,h4,h5,h6{color:#232323;margin:36px 0 10px}h1,h2,h3{font-family:Arvo,Monaco,serif;line-height:1.3;font-weight:400;display:block;border-bottom:1px solid #ccc;padding-bottom:5px}h1{font-size:30px}h2{font-size:24px}h3{font-size:18px}a{color:#C30000;font-weight:200;text-decoration:none}a:hover{text-decoration:underline}img{position:relative;max-width:650px;padding:5px;margin:10px 0 32px;border:1px solid #ccc}.wrapper{width:960px}header{background-color:#171717;color:#FDFDFB;width:170px;float:left;position:fixed;border:1px solid #000;border-top-right-radius:4px;border-bottom-right-radius:4px;padding:34px 25px 22px 50px;margin:30px 25px 0 0;-webkit-font-smoothing:antialiased}h1.header{font-family:Arvo,sans-serif;font-size:30px;font-weight:300;line-height:1.3em;border-bottom:none;margin-top:0}h1.header,a.header,a.name,header a{color:#fff}section{width:650px;float:right;padding-bottom:50px;text-align:justify}@media print,screen and (max-width:960px){div.wrapper{width:auto;margin:0}header,section,footer{float:none;position:static;width:auto}header{padding-right:320px}section{padding:20px 84px 20px 50px;margin:0 0 20px}}@media print,screen and (max-width:720px){body{word-wrap:break-word}header{padding:10px 20px 0;margin-right:0;text-align:center}section{padding:10px 0 10px 20px;margin:0 0 30px}}@media print,screen and (max-width:480px){footer{margin:0 0 0 20px}}.github-icon,.linkedin-icon,.youtube-icon,.pdf-icon{width:24px;height:24px;border:none;padding:0;margin:0 8px 0 0;vertical-align:middle}.talk,.publication,.code-project{margin-bottom:24px;padding:12px;border-left:3px solid #5A6C7D;border-radius:4px}</style>
+  <style>
+    html, body, div, span,
+    h1, h2, h3, h4, h5, h6,
+    p, a, img, ul, ol, li,
+    header, section, footer {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font: inherit;
+      vertical-align: baseline;
+    }
+
+    body {
+      padding: 10px 50px 0 0;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #232323;
+      background-color: #FBFAF7;
+      line-height: 1.8em;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      color: #232323;
+      margin: 36px 0 10px;
+    }
+
+    h1, h2, h3 {
+      font-family: Arvo, Monaco, serif;
+      line-height: 1.3;
+      font-weight: 400;
+      display: block;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 5px;
+    }
+
+    h1 { font-size: 30px; }
+    h2 { font-size: 24px; }
+    h3 { font-size: 18px; }
+
+    a {
+      color: #C30000;
+      font-weight: 200;
+      text-decoration: none;
+    }
+
+    a:hover { text-decoration: underline; }
+
+    img {
+      position: relative;
+      max-width: 650px;
+      padding: 5px;
+      margin: 10px 0 32px;
+      border: 1px solid #ccc;
+    }
+
+    .wrapper { width: 960px; }
+
+    header {
+      background-color: #171717;
+      color: #FDFDFB;
+      width: 170px;
+      float: left;
+      position: fixed;
+      border: 1px solid #000;
+      border-top-right-radius: 4px;
+      border-bottom-right-radius: 4px;
+      padding: 34px 25px 22px 50px;
+      margin: 30px 25px 0 0;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    h1.header {
+      font-family: Arvo, sans-serif;
+      font-size: 30px;
+      font-weight: 300;
+      line-height: 1.3em;
+      border-bottom: none;
+      margin-top: 0;
+    }
+
+    h1.header, a.header, a.name, header a { color: #fff; }
+
+    section {
+      width: 650px;
+      float: right;
+      padding-bottom: 50px;
+      text-align: justify;
+    }
+
+    @media print, screen and (max-width: 960px) {
+      div.wrapper { width: auto; margin: 0; }
+      header, section, footer { float: none; position: static; width: auto; }
+      header { padding-right: 320px; }
+      section { padding: 20px 84px 20px 50px; margin: 0 0 20px; }
+    }
+
+    @media print, screen and (max-width: 720px) {
+      body { word-wrap: break-word; }
+      header { padding: 10px 20px 0; margin-right: 0; text-align: center; }
+      section { padding: 10px 0 10px 20px; margin: 0 0 30px; }
+    }
+
+    @media print, screen and (max-width: 480px) {
+      footer { margin: 0 0 0 20px; }
+    }
+
+    /* Icon dimensions — stable before async styles.css arrives */
+    .github-icon, .linkedin-icon, .youtube-icon, .pdf-icon {
+      width: 24px;
+      height: 24px;
+      border: none;
+      padding: 0;
+      margin: 0 8px 0 0;
+      vertical-align: middle;
+    }
+
+    /* Card layout — prevents reflow when styles.css applies padding/border post-paint */
+    .talk, .publication, .code-project {
+      margin-bottom: 24px;
+      padding: 12px;
+      border-left: 3px solid #5A6C7D;
+      border-radius: 4px;
+    }
+  </style>
 
   <!-- Preload custom font with font-display optional to avoid layout shifts on font swap -->
   <link rel="preload" href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400&display=optional" as="style" onload="this.onload=null;this.rel='stylesheet'">
