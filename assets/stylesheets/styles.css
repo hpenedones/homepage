@@ -513,6 +513,31 @@ screen and (max-width: 480px) {
 
 }
 
+/* News section */
+
+.news-item {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+  padding: 12px;
+  background-color: #f0f7ff;
+  border-left: 3px solid #3a7bd5;
+  border-radius: 4px;
+}
+
+.news-date {
+  font-size: 13px;
+  font-weight: 700;
+  color: #3a7bd5;
+  white-space: nowrap;
+  padding-top: 2px;
+}
+
+.news-content {
+  font-size: 15px;
+  line-height: 1.5;
+}
+
 /* Reusable "content card" container used by publications, talks, and code projects.
    content-visibility is also in the critical inline CSS (head.html) for first-paint;
    repeated here so it stays consistent after the async stylesheet loads. */
