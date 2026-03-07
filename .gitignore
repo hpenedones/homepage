@@ -5,3 +5,4 @@ wget-log
 public/
 .hugo_build.lock
 resources/
+hugo_extended_*.tar.gz
