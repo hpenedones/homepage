@@ -7,9 +7,7 @@ I recently started playing with the torch library again. Torch7 is now a growing
 
 So far, I have done a few very simple contributions to the torch ecosystem:
 
-1) Extended the matio package, which reads MAT files, to support structs, cell arrays and strings, in addition to loading tensors, which was already implemented:
-
-https://github.com/hpenedones/matio-ffi.torch
+1) Extended the matio package, which reads MAT files, to support structs, cell arrays and strings, in addition to loading tensors, which was already implemented.
 
 2) Started working on a metrics package for torch, which will compute things like ROC (Receiver Operator Curve) and Confusion Matrices. Probably dozens of other people have written similar code for torch, but I couldn't find an authoritative package doing just that. So, I started one at:
 
