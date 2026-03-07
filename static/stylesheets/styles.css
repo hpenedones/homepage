@@ -513,7 +513,9 @@ screen and (max-width: 480px) {
 
 }
 
-/* Reusable "content card" container used by publications, talks, and code projects. */
+/* Reusable "content card" container used by publications, talks, and code projects.
+   content-visibility is also in the critical inline CSS (head.html) for first-paint;
+   repeated here so it stays consistent after the async stylesheet loads. */
 .publication,
 .talk,
 .code-project {

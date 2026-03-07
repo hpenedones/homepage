@@ -180,7 +180,7 @@
               li.textContent = item;
               toc.appendChild(li);
             });
-          } catch(e) {}
+          } catch(e) { console.error('Failed to render book TOC:', e); }
         }
         btn.setAttribute('aria-expanded', expanded ? 'false' : 'true');
         btn.textContent = expanded ? 'Conteúdo ▼' : 'Conteúdo ▲';
