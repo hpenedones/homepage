@@ -5,7 +5,7 @@ date: 2015-04-16
 
 Yesterday I attended a [talk organized by the London Machine Learning meetup group, where Yoshua Bengio was the invited speaker](http://www.meetup.com/London-Machine-Learning-Meetup/events/221601571/). Not surprisingly, there were about 200 people attending.
 
-![deep_learning_theory](..//images/deep_learning_theory.jpg)
+![deep_learning_theory](/images/deep_learning_theory.jpg)
 
 Yoshua reinforced the idea that a lot of the success of learning algorithms for AI tasks comes from incorporating meaningful priors. These should be general enough to hold true in a wide range of applications, but also specific enough to vastly reduce the amount of training data needed to achieve good generalization. This reminded me of a [previous post](/blog/2010-11-12-the-ai-set-of-functions/) I wrote in this blog, almost 5 years ago!
 
