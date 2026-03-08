@@ -10,24 +10,12 @@
 
       <h2>News</h2>
 
+      {{ range $.Site.Data.news }}
       <div class="news-item">
-        <span class="news-date">Mar 2026</span>
-        <div class="news-content">
-          I am launching  a boutique AI studio
-          focused on challenging R&amp;D projects in Physical AI and AI4Science. I am accepting inquiries
-          for project partnerships <b>starting in May 2026</b>. Feel free to reach out via
-          <a href="https://www.linkedin.com/in/hpenedones/">LinkedIn</a>.
-        </div>
+        <span class="news-date">{{ .date }}</span>
+        <div class="news-content">{{ .content | safeHTML }}</div>
       </div>
-
-      <div class="news-item">
-        <span class="news-date">Mar 2026</span>
-        <div class="news-content">
-          Released <a href="https://github.com/hpenedones/fastflowlm-docker">fastflowlm-docker</a>,
-          a Docker container for running LLMs on AMD Ryzen AI NPU under Linux. The official support
-          was limited to Windows, but Claude Opus 4.6 figured out how to build it succesfully in Linux!
-        </div>
-      </div>
+      {{ end }}
 
       <h2>Blog</h2>
 
