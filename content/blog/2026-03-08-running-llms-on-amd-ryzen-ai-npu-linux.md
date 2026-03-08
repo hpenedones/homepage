@@ -3,7 +3,7 @@ title: "Running LLMs on AMD Ryzen AI NPU under Linux — A First"
 date: 2026-03-08
 ---
 
-I just got **Llama 3.2 1B running at 60 tokens/sec on my laptop's NPU** (AMD Ryzen AI 9 HX 370) under Ubuntu Linux — something that, as far as I can tell, hasn't been publicly demonstrated before.
+I just got **Llama 3.2 1B running at 60 tokens/sec on my nubox mini PC's NPU (Neural Processing Unit)** (AMD Ryzen AI 9 HX 370) under Ubuntu Linux — something that, as far as I can tell, hasn't been publicly demonstrated before.
 
 ![Demo — Llama 3.2 1B running on AMD Ryzen AI NPU at ~60 tokens/s](https://raw.githubusercontent.com/hpenedones/fastflowlm-docker/main/demo.gif)
 
