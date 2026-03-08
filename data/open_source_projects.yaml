@@ -39,6 +39,10 @@ main:
     url: "https://github.com/hpenedones/ngrams_autocomplete"
     description: "A character-based n-grams language model for probabilistic query autocomplete. Given a text prefix, it suggests the most likely completions based on a trained model."
 
+  - name: "fastflowlm-docker"
+    url: "https://github.com/hpenedones/fastflowlm-docker"
+    description: "Docker container for running large language models on AMD Ryzen AI NPU under Linux using FastFlowLM. Built entirely by Claude AI via GitHub Copilot CLI."
+
 competitive_programming:
   - name: "acm_utils"
     url: "https://github.com/hpenedones/acm_utils"
