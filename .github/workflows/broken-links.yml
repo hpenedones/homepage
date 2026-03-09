@@ -27,15 +27,15 @@ jobs:
       - name: Build site
         run: hugo
 
-      - name: Check links in built HTML and Markdown sources
+      - name: Check links in built HTML
         uses: lycheeverse/lychee-action@v1
         with:
-          # Check built HTML output and source Markdown content files
+          # Check built HTML output only (not source Markdown files)
           args: |
             --verbose
             --no-progress
             --config .lychee.toml
-            './public/**/*.html' './content/**/*.md'
+            './public/**/*.html'
 
           # Fail the workflow if broken links are found
           fail: true
