@@ -56,8 +56,6 @@ exclude = [
   "doxygen.org",
   "gnu.org",
   "idsia.ch",
-
-  # Decommissioned sites
   "githubnext.com",
 ]
 
