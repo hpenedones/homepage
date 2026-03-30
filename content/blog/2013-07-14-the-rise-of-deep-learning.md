@@ -3,7 +3,7 @@ title: "The rise of Deep Learning"
 date: 2013-07-14
 ---
 
-A couple of years ago, I was doing research involving Convolutional Neural Networks for object classification tasks (see [here](http://hpenedones.org/publications/Penedones_Idiap-RR-30-2012.pdf)). At that point, deep learning was an (re)emergent field, but it hadn't achieved mainstream yet.
+A couple of years ago, I was doing research involving Convolutional Neural Networks for object classification tasks (see [here](http://hpenedones.me/publications/Penedones_Idiap-RR-30-2012.pdf)). At that point, deep learning was an (re)emergent field, but it hadn't achieved mainstream yet.
 
 Today, several factors are contributing to the increase of visibility:
 
