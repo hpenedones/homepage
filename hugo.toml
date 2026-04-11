@@ -13,6 +13,13 @@ enableRobotsTXT = false
   # Allow raw HTML in Markdown (needed for <iframe>, <video> in blog posts)
   unsafe = true
 
+[markup.goldmark.extensions.passthrough]
+  enable = true
+
+[markup.goldmark.extensions.passthrough.delimiters]
+  block = [["$$", "$$"]]
+  inline = [["$", "$"]]
+
 [markup.highlight]
   # Use CSS classes rather than inline styles so pygment_trac.css applies
   noClasses = false
