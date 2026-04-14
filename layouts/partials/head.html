@@ -4,6 +4,15 @@
   <meta name="description" content="{{ if .IsHome }}Hugo Penedones — Machine Learning engineer and researcher. Co-founder of inductiva.ai, early AlphaFold team member at Google DeepMind. Talks, publications, blog and open-source projects.{{ else if .Description }}{{ .Description }}{{ else }}{{ .Title }} — Hugo Penedones{{ end }}">
   <link rel="icon" href="/favicon.ico">
 
+  <!-- Open Graph meta tags (used by LinkedIn, Twitter, etc.) -->
+  <meta property="og:title" content="{{ if .IsHome }}Hugo Penedones{{ else }}{{ .Title }}{{ end }}">
+  <meta property="og:description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Title }} — Hugo Penedones{{ end }}">
+  <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
+  <meta property="og:url" content="{{ .Permalink }}">
+  {{ with .Params.og_image }}
+  <meta property="og:image" content="{{ . | absURL }}">
+  {{ end }}
+
   <!-- Preconnect to external domains -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
