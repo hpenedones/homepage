@@ -5,7 +5,7 @@ draft: false
 math: true
 tags: ["machine learning", "equivariance", "MLIPs", "geometric deep learning", "molecular simulation"]
 description: "Enforcing rotational symmetry in neural networks sounds like a costless constraint: it encodes something we know must be true. So why are state-of-the-art models quietly abandoning it?"
-og_image: "/images/equivariance-diagram.png"
+og_image: "/images/equivariance-diagram-og.png"
 ---
 
 Some inductive biases encode *beliefs* about the data: bets that certain hand-crafted
