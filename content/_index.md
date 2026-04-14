@@ -1,6 +1,9 @@
 ---
 title: "Hugo Penedones"
 blog_highlights:
+  - url: "/blog/2026-04-14-equivariance-value-and-cost/"
+    title: "Equivariance in Neural Networks: A Free Lunch That Isn't"
+    year: "2026"
   - url: "/blog/2025-11-07-the-future-of-ai-is-physical-simulation-is-key/"
     title: "The Future of AI is Physical: Simulation is Key"
     year: "2025"
