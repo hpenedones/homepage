@@ -8,15 +8,6 @@
       <h2>About me</h2>
       {{ .Content }}
 
-      <h2>News</h2>
-
-      {{ range $.Site.Data.news }}
-      <div class="news-item">
-        <span class="news-date">{{ .date }}</span>
-        <div class="news-content">{{ .content | safeHTML }}</div>
-      </div>
-      {{ end }}
-
       <h2>Blog</h2>
 
       <div class="quote-card">
