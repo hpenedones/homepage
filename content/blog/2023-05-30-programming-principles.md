@@ -1,7 +1,7 @@
 ---
 title: "Programming Principles"
 date: 2023-05-30
-originalURL: "https://inductiva.ai/blog/article/programming-at-inductiva"
+lastmod: 2026-06-12
 ---
 
 Computation is at the heart of what we do. We write computer programs for running simulations of physical systems, training Machine Learning models, automating tasks or simply testing new ideas. In this blog post we share the programming principles that we try to follow to make fast progress on our goals, while maintaining high standards on the quality of our code.
@@ -15,7 +15,7 @@ Computation is at the heart of what we do. We write computer programs for runnin
 - [Don't write "scripts"](#dont-write-scripts)
 - [Write Unit Tests](#write-unit-tests)
 - [Manage Technical Debt](#manage-technical-debt)
-- [Avoid the "Not Invented Here" Syndrome](#avoid-the-not-invented-here-syndrome)
+- [Don't Reinvent the Wheel](#dont-reinvent-the-wheel)
 
 ## Tracer Bullets
 
@@ -132,16 +132,18 @@ Similarly, when you have a deadline for a demo of your product, you might not ha
 
 However, what one can not do, is to never pay back that debt and keep accumulating it. This is a recipe for disaster, as refactorings will be harder and harder! As part of your development cycle, you need to constantly allocate some time to refactor your code, without adding new features. Just clean up, re-organize, and pay up technical debt regularly (e.g., once a week).
 
-## Avoid the "Not Invented Here" Syndrome
+## Don't Reinvent the Wheel
 
-A very common pitfall for engineers, even relatively experienced ones, is the NIH (Not Invented Here) Syndrome. This syndrome manifests itself by a strong tendency to implement functionalities that have been already implemented and made available via external software packages. The NIH Syndrome is dangerous because it greatly increases the cost of developing and maintaining functionalities and significantly slows down the speed at which a team can move and ramp up new elements since there is a larger code base to learn, manage and document.
+A very common pitfall for engineers, even relatively experienced ones, is the urge to reimplement functionalities from scratch when well-maintained, mature open-source alternatives already exist. This temptation is dangerous because it greatly increases the cost of developing and maintaining software, and significantly slows down the speed at which a team can deliver value.
 
-There are several reasons for falling victim to the NIH Syndrome, and some of these reasons are actually quite reasonable. This is why the NIH Syndrome is a particularly tricky anti-pattern to avoid.
+The most effective engineering teams understand the importance of "building on the shoulders of giants." Rather than spending weeks or months reimplementing something that already exists, they leverage existing open-source libraries and tools as building blocks — like Lego pieces — and focus their energy on writing the software that is truly their core business: the thing that differentiates them and that they care about most.
 
-One of the reasons is a misconception about externally developed software. One often claims about external packages not being a) as good, b) as efficient, c) as reliable, d) as easy to understand as internally developed software. Although this may be sometimes the case, experience has shown that there are really good pieces of open-source software available, maintained by groups that follow good software practices. Therefore, when these packages reach significant levels of user adoption, it is very likely that most of the problems that could affect them have been resolved. If their documentation is good, then integrating them should be relatively simple, compared to developing (and documenting) similar functionalities from scratch.
+One common reason why engineers fall into this trap is that existing packages don't provide the exact functionalities needed, or their interfaces don't perfectly match the project's existing data structures. Because the fit is not exact, the natural instinct of a proficient programmer may be to reimplement everything so that the new code perfectly matches the existing need. This is frequently a trap. Adapting your code to work with a well-tested external library is almost always a better investment than building and maintaining your own version. Confronting ourselves with the possibility of integrating external software can actually be an opportunity for rethinking and improving our own implementations.
 
-Another common reason for not adopting externally developed software packages is that very often they don't provide the exact functionalities that are needed or they do but the interface to those functionalities does not match the currently used data structures. Again, because the fit is not exact, the natural answer of a proficient programmer may be to re-implement everything so that the new code perfectly matches the existing need. This is frequently a trap. Confronting ourselves with the possibility of integrating external software can actually be an opportunity for rethinking our own implementations.
+In short: don't spend your precious engineering time rebuilding what others have already built well. Use those existing tools as your foundation, and dedicate your effort to the problems that only you can solve.
 
 ## Conclusions
 
-Independently of whether you are writing production code or research code, following well established programming principles and best practices can maximize your impact. At Inductiva we try to promote a culture of scientific and engineering craftsmanship that deeply cares about the quality of what we do, so that we can solve increasingly bigger real world problems at the intersection of AI and Simulation.
+Independently of whether you are writing production code or research code, following well established programming principles and best practices can maximize your impact.
+
+*Originally published in May 2023. Updated in June 2026.*
